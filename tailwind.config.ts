@@ -7,12 +7,15 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    backgroundImage: {
+      'img_maquina_telhas': "url('../assets/maquina-telhas.png')"
+    },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      colors: {
+        'primary-color': '#000000',
+        'second-color': '#FFFFFF',
+        'button': '#009A22'
+      }
     },
   },
   plugins: [],
