@@ -9,7 +9,7 @@ const Button: React.FC<ButtonProps> = ({ link, text }) => {
   return (
     <Link
       href={link}
-      className="w-full bg-button text-base rounded px-8 py-2"
+      className="w-full bg-button font-bold text-base rounded px-10 py-3 shadow-lg"
     >{text}</Link>
   );
 }

@@ -11,10 +11,14 @@ const config: Config = {
       'img_maquina_telhas': "url('../assets/maquina-telhas.png')"
     },
     extend: {
+      brightness: {
+        25: '.25'
+      },
       colors: {
         'primary-color': '#000000',
         'second-color': '#FFFFFF',
-        'button': '#009A22'
+        'button': '#009A22',
+        'text-select': '#009A22;'
       }
     },
   },
