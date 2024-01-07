@@ -1,6 +1,7 @@
 {
   "name": "brasil-telhas-metalicas",
   "version": "0.1.0",
+  "author": "Pedro Barreto Neto <pedro.barreto.ne@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "next dev",

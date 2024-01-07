@@ -15,8 +15,8 @@ const config: Config = {
         25: '.25'
       },
       colors: {
-        'primary-color': '#000000',
-        'second-color': '#FFFFFF',
+        'title': '#3259A6',
+        'text': '#010101',
         'button': '#009A22',
         'text-select': '#009A22;'
       }

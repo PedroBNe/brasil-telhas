@@ -3,12 +3,14 @@ import { Montserrat } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Banner from '@/components/Banner'
+import Footer from '@/components/Footer'
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
 
 export const metadata: Metadata = {
   title: 'Brasil Telhas',
   description: 'Telhas Metálicas',
+  authors: [{ name: 'Pedro Barreto Neto' }, { name: 'pedro.barreto.ne@gmail.com'}],
 }
 
 export default function RootLayout({
@@ -26,7 +28,10 @@ export default function RootLayout({
             <Banner />
           </div>
         </div>
-        {children}
+        <div className='px-[8%]'>
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   )
