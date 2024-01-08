@@ -16,9 +16,10 @@ const config: Config = {
       },
       colors: {
         'title': '#3259A6',
+        'product': '#3259A6',
         'text': '#010101',
         'button': '#009A22',
-        'text-select': '#009A22;'
+        'text-select': '#009A22'
       }
     },
   },
