@@ -1,5 +1,9 @@
+import Welcome from "@/components/home/Welcome";
+
 export default function Home() {
   return (
-    <h1>Aqui</h1>
+    <div className=" my-20">
+      <Welcome />
+    </div>
   )
 }
