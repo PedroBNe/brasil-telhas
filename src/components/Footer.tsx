@@ -14,6 +14,8 @@ import Map from "./Map"
 
 import LogoFooter from "@/assets/Logo-footer.png"
 
+import FooterGhost from "@/assets/footerGhost.png"
+
 import Button from "./Button";
 
 export default function Footer(){
@@ -27,7 +29,12 @@ export default function Footer(){
           </div>
           <div className="flex mb-[50px]">
             <div>
-              <Image src={Local} alt="Localização" />
+              <Image
+                src={Local}
+                alt="Localização"
+                width={40}
+                height={40}
+              />
             </div>
             <div className="text-text font-medium text-sm">
               <p>R. Antônio Simão, 543 - São José, </p>
@@ -36,7 +43,12 @@ export default function Footer(){
           </div>
           <div className="flex mb-[50px]">
             <div>
-              <Image src={Email} alt="Email" />
+              <Image
+                src={Email}
+                alt="Email"
+                width={40}
+                height={40}
+              />
             </div>
             <div className="text-text font-medium text-sm">
               <p>contato@brasiltelhasmetalicas.com.br</p>
@@ -45,7 +57,12 @@ export default function Footer(){
           </div>
           <div className="flex mb-[50px]">
             <div>
-              <Image src={Call} alt="Telefone" />
+              <Image
+                src={Call}
+                alt="Telefone"
+                width={40}
+                height={40}
+              />
             </div>
             <div className="text-text font-medium text-sm">
               <p>(48) 98809-9066</p>
@@ -53,10 +70,10 @@ export default function Footer(){
             </div>
           </div>
           <div className="flex">
-            <Link className="w-[15%]" href="/"><Image src={Google} alt="Google"/></Link>
-            <Link className="w-[15%]" href="/"><Image src={Instagram} alt="Instagram"/></Link>
-            <Link className="w-[15%]" href="/"><Image src={Facebook} alt="Facebook"/></Link>
-            <Link className="w-[15%]" href="/"><Image src={Linkedin} alt="LinkedIn"/></Link>
+            <Link className="w-[15%]" href="/"><Image src={Google} alt="Google" width={45} height={45}/></Link>
+            <Link className="w-[15%]" href="/"><Image src={Instagram} alt="Instagram" width={45} height={45}/></Link>
+            <Link className="w-[15%]" href="/"><Image src={Facebook} alt="Facebook" width={45} height={45}/></Link>
+            <Link className="w-[15%]" href="/"><Image src={Linkedin} alt="LinkedIn" width={45} height={45}/></Link>
           </div>
         </div>
         <div className="w-[60%]">
@@ -76,7 +93,12 @@ export default function Footer(){
       </div>
       <div className="flex">
         <div className="w-[25%]">
-          <Image src={LogoFooter} alt="Logo" />
+          <Image
+            src={LogoFooter}
+            alt="Logo"
+            width={160}
+            height={100}
+          />
         </div>
         <div className="w-[25%]">
           <ul className="text-sm font-normal">
@@ -104,6 +126,24 @@ export default function Footer(){
             <li><Link href="/">Acompanhe nossa página no Facebook</Link></li>
             <li><Link href="/">Nos avalie no Google+</Link></li>
           </ul>
+        </div>
+      </div>
+      <div className="flex font-normal text-xs my-6">
+        <div>
+          <p className="pb-2">CNPJ: 44.159.581/0001-84</p>
+          <div>
+            <p>Copyright © 2023, Brasil Telhas Metálicas.</p>
+            <p>Todos os Direitos Reservados.</p>
+          </div>
+        </div>
+        <div className="flex flex-col items-center absolute left-1/2 transform -translate-x-1/2">
+          <p>Developer</p>
+          <Image 
+            src={FooterGhost}
+            alt="Logo rodapé"
+            width={130}
+            height={30}
+          />
         </div>
       </div>
     </footer>

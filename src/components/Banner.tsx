@@ -6,7 +6,7 @@ import SimbolImage from '@/assets/BRASIL TELHAS 1.png'
 
 export default function Banner(){
   return (
-    <div className="pl-[8%] text-white mt-44  max-w-6xl static">
+    <div className="pl-[6%] text-white mt-44  max-w-6xl static">
       <div className=" font-bold text-5xl leading-[3.5rem] mb-[2%]">
         <h1>CONSTRUINDO EXCELÊNCIA EM COBERTURAS  METÁLICAS</h1>
       </div>
@@ -24,6 +24,8 @@ export default function Banner(){
           <Image
             src={MenuRight}
             alt="MenuRight"
+            width={32}
+            height={24}
             className=" cursor-pointer"
           />
         </div>
@@ -32,6 +34,8 @@ export default function Banner(){
         <Image 
           src={SimbolImage}
           alt="Simbolo marca"
+          width={660}
+          height={395}
         />
       </div>
     </div>

@@ -28,7 +28,7 @@ export default function RootLayout({
             <Banner />
           </div>
         </div>
-        <div className='px-[8%]'>
+        <div className='px-[6%]'>
           {children}
           <Footer />
         </div>
