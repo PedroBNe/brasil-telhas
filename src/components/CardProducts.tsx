@@ -6,17 +6,16 @@ interface CardProductsProps {
   text: string;
   title: string;
   btn: string;
-  top: string;
-  w?: string;
+  classe: string;
 }
 
-const CardProducts: React.FC<CardProductsProps> = ({img, text, title, btn, top, w }) => {
+const CardProducts: React.FC<CardProductsProps> = ({img, text, title, btn, classe }) => {
   return (
-    <div className="w-[26%] bg-product flex flex-col items-center p-6 relative">
-      <div className={`flex justify-center absolute top-[${top}px] ${w ? `w-[${w}]` : null}`}>
+    <div className="w-[25%] bg-product flex flex-col items-center p-6 relative">
+      <div className={classe}>
         <Image src={img} alt="Produto" width={350} height={100} />
       </div>
-      <div className="font-bold text-xl text-white pt-[50%]">
+      <div className="font-bold text-xl text-white mt-[70%]">
         <h3>{title}</h3>
       </div>
       <div className="font-normal text-sm text-white">
