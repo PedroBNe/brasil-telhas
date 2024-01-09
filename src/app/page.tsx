@@ -1,5 +1,6 @@
 import Benefits from "@/components/home/Benefits";
 import OursProducts from "@/components/home/OursProducts";
+import Success from "@/components/home/Success";
 import Welcome from "@/components/home/Welcome";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Welcome />
       <OursProducts />
       <Benefits />
+      <Success />
     </div>
   )
 }

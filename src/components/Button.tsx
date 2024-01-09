@@ -7,11 +7,12 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ link, text }) => {
   return (
-    <Link
+    <div className="w-full bg-button font-bold text-base text-white rounded px-8 py-3 shadow-lg">
+      <Link
       href={link}
-      className="w-full bg-button font-bold text-base text-white rounded px-8 py-3 shadow-lg"
     >{text}</Link>
-  );
+    </div>
+  )
 }
 
 export default Button;

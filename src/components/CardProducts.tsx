@@ -11,7 +11,7 @@ interface CardProductsProps {
 
 const CardProducts: React.FC<CardProductsProps> = ({img, text, title, btn, classe }) => {
   return (
-    <div className="w-[25%] bg-product flex flex-col items-center p-6 relative">
+    <div className="w-[25%] bg-product flex flex-col items-center p-6 relative shadow-2xl">
       <div className={classe}>
         <Image src={img} alt="Produto" width={350} height={100} />
       </div>
