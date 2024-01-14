@@ -57,3 +57,45 @@ h2{
 p{
 	@apply font-normal text-sm;
 }
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+	height: 300px; 
+	margin-top: 2%;
+}
+
+.carousel-slide {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+	position: absolute;
+	top: 0;
+  gap: 1%;
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
+  transform: translateX(-100%); /* Mova os slides para a direita para começar */
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.prev-button{
+	position: absolute;
+  top: 50%;
+  z-index: 1;
+	left: 2.5%;;
+}
+
+.next-button{
+	position: absolute;
+  top: 50%;
+  z-index: 1;
+  right: 2.5%;;
+}
