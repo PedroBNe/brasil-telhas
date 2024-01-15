@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from "next/image";
+
 import Maior from "@/assets/Carousel/maior.png";
 import Menor from "@/assets/Carousel/menor.png";
 

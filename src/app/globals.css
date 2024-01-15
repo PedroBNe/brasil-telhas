@@ -78,7 +78,8 @@ p{
   min-width: 100%;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   opacity: 0;
-  transform: translateX(-100%); /* Mova os slides para a direita para começar */
+  transform: translateX(-100%);
+	align-items: center;
 }
 
 .slide.active {
@@ -98,4 +99,15 @@ p{
   top: 50%;
   z-index: 1;
   right: 2.5%;;
+}
+
+.testimony{
+	position: relative;
+  overflow: hidden;
+	height: 460px; 
+	margin-top: 2%;
+}
+
+.slide-testion{
+	
 }

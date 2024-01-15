@@ -2,6 +2,7 @@ import Benefits from "@/components/home/Benefits";
 import OursProducts from "@/components/home/OursProducts";
 import Social from "@/components/home/Social";
 import Success from "@/components/home/Success";
+import Testimony from "@/components/home/Testimony";
 import Welcome from "@/components/home/Welcome";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Benefits />
       <Success />
       <Social />
+      <Testimony />
     </div>
   )
 }
