@@ -58,9 +58,13 @@ export default function Testimony(){
   };
 
   return (
-    <div>
+    <div className=" relative">
+      <div className="absolute top-6">
+        <h1>Depoimentos</h1>
+        <p className="text-title">De quem comprovou nossa qualidade!</p>
+      </div>
       <div className="testimony">
-        <button className='prev-button' onClick={goToPrevSlide}><Image src={LeftBtn} alt='Left' /></button>
+        <button className='prev-testimony' onClick={goToPrevSlide}><Image src={LeftBtn} alt='Left' /></button>
         <div className="carousel-slide">
           {carouselItems.map((item, index) => (
             <div
@@ -68,18 +72,18 @@ export default function Testimony(){
               className={index === activeIndex ? "slide-testion slide active" : "slide-testion slide"}
             >
               {item.testimony.map(testion => (
-                <div key={testion.title} className="w-[28%] ">
+                <div key={testion.title} className="w-[28%] mt-[2%]">
                   <p className="flex">
                     {Array.from({ length: testion.quality }).map((_, index) => (
                       <Image key={index} src={Star} alt="Star" width={20} height={20} />
                     ))}
                   </p>
-                  <h2>{testion.title}</h2>
-                  <p>{testion.profession}</p>
-                  <p className="text-justify">{testion.text}</p>
+                  <h2 className="text-text">{testion.title}</h2>
+                  <p className="text-text italic font-medium mb-4">{testion.profession}</p>
+                  <p className="text-justify font-medium">{testion.text}</p>
                 </div>
               ))}
-              <div className="flex">
+              <div className="flex gap-[2%]">
                 {item.images.map(image => (
                   <Image key={image.alt} src={image.src} alt={image.alt} />
                 ))}
@@ -87,7 +91,7 @@ export default function Testimony(){
             </div>
           ))}
         </div>
-        <button className='next-button' onClick={goToNextSlide}><Image src={RightBtn} alt='Right'/></button>
+        <button className='next-testimony' onClick={goToNextSlide}><Image src={RightBtn} alt='Right'/></button>
       </div>
     </div>
   )

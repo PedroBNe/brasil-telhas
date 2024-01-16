@@ -91,14 +91,14 @@ p{
 	position: absolute;
   top: 50%;
   z-index: 1;
-	left: 2.5%;;
+	left: 2.5%;
 }
 
 .next-button{
 	position: absolute;
   top: 50%;
   z-index: 1;
-  right: 2.5%;;
+  right: 2.5%;
 }
 
 .testimony{
@@ -109,5 +109,21 @@ p{
 }
 
 .slide-testion{
-	
+	display: flex;
+	justify-content: space-evenly;
+	gap: 5%;
+}
+
+.prev-testimony{
+	position: absolute;
+  top: 50%;
+  z-index: 1;
+	left: 0;
+}
+
+.next-testimony{
+	position: absolute;
+  top: 50%;
+  z-index: 1;
+  right: 0;
 }
