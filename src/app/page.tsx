@@ -1,3 +1,4 @@
+import AreWe from "@/components/home/AreWe";
 import Benefits from "@/components/home/Benefits";
 import OursProducts from "@/components/home/OursProducts";
 import Social from "@/components/home/Social";
@@ -14,6 +15,7 @@ export default function Home() {
       <Success />
       <Social />
       <Testimony />
+      <AreWe />
     </div>
   )
 }
