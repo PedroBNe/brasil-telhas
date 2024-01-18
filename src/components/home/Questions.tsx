@@ -108,7 +108,7 @@ export default function Question() {
         </ul>
       </div>
       <div className="absolute top-24 right-[-36%]">
-        <Image src={Logo} alt="Logo" width={540} />
+        <Image src={Logo} alt="Logo" width={540} /> 
       </div>
     </div>
   );
