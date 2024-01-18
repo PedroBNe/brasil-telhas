@@ -141,3 +141,7 @@ p{
 .list-questions p, img{
 	cursor: pointer;
 }
+
+.list-questions li{
+	width: 70%;
+}

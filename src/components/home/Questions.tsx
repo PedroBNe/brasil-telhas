@@ -2,7 +2,9 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+
 import Menu from "@/assets/Questions/menu.svg"
+import Logo from "@/assets/Questions/Telhas.png"
 
 import { SetStateAction, useState } from 'react';
 
@@ -10,7 +12,7 @@ export default function Question() {
   const [activeList, setActiveList] = useState<number | null>(null);
 
   return (
-    <div className="flex flex-col gap-9 max-w-[75%] select-none">
+    <div className="flex flex-col gap-9 h-[450px] max-w-[75%] select-none relative">
       <div>
         <h1 className="mb-2">Não queremos deixá-lo com dúvidas!</h1>
         <p className="text-title">Caso não encontre o que procura, entre em contato com nossa equipe.</p>
@@ -104,6 +106,9 @@ export default function Question() {
           </motion.div>
           )}
         </ul>
+      </div>
+      <div className="absolute top-24 right-[-36%]">
+        <Image src={Logo} alt="Logo" width={540} />
       </div>
     </div>
   );
