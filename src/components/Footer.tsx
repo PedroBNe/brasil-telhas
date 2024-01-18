@@ -80,7 +80,7 @@ export default function Footer(){
           <div className="mb-11">
             <Map />
           </div>
-          <div className="flex">
+          <div className="flex gap-6">
             <div className="w-[60%] text-title">
               <p className="font-normal">Quer saber mais?</p>
               <p className="font-bold">Entre em contato agora mesmo com nossa equipe através do Whatsapp</p>
