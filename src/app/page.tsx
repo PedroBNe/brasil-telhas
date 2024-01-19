@@ -1,4 +1,5 @@
 import AreWe from "@/components/home/AreWe";
+import Avaliacao from "@/components/home/Avaliacao";
 import Benefits from "@/components/home/Benefits";
 import OursProducts from "@/components/home/OursProducts";
 import Question from "@/components/home/Questions";
@@ -18,6 +19,7 @@ export default function Home() {
       <Testimony />
       <AreWe />
       <Question />
+      <Avaliacao />
     </div>
   )
 }
