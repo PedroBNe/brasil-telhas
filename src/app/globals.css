@@ -145,3 +145,19 @@ p{
 .list-questions li{
 	width: 70%;
 }
+
+.carousel-ava{
+	overflow: hidden;
+}
+
+.inner-ava{
+	width: 1000px;
+	gap: 50px;
+	display: flex;
+}
+
+.item-ava{
+	min-width: 300px;
+	width: 300px;
+	padding: 14px;
+}

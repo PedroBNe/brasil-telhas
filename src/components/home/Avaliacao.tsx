@@ -1,90 +1,101 @@
+"use client"
+
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 import Image from "next/image";
 
-import Profile from "@/assets/Avaliacao/profile.svg"
-import Left from "@/assets/Avaliacao/menu-left.svg"
-import Right from "@/assets/Avaliacao/menu-right.svg"
+import Profile from "@/assets/Avaliacao/profile.svg";
+import Left from "@/assets/Avaliacao/menu-left.svg";
+import Right from "@/assets/Avaliacao/menu-right.svg";
 
-export default function Avaliacao(){
+const profiles = [
+  {
+    user: "Ghost Company",
+    category: "Agência de Publicidade",
+    image: Profile,
+    text: "Uma empresa séria e dedicada em fornecer qualidade para os seus clientes. Parabéns a toda equipe!"
+  },
+  {
+    user: "User2",
+    category: "Agência de Publicidade",
+    image: Profile,
+    text: "Uma empresa séria e dedicada em fornecer qualidade para os seus clientes. Parabéns a toda equipe!"
+  },
+  {
+    user: "User3",
+    category: "Agência de Publicidade",
+    image: Profile,
+    text: "Uma empresa séria e dedicada em fornecer qualidade para os seus clientes. Parabéns a toda equipe!"
+  },
+  {
+    user: "User4",
+    category: "Agência de Publicidade",
+    image: Profile,
+    text: "Uma empresa séria e dedicada em fornecer qualidade para os seus clientes. Parabéns a toda equipe!"
+  },
+  {
+    user: "User4",
+    category: "Agência de Publicidade",
+    image: Profile,
+    text: "Uma empresa séria e dedicada em fornecer qualidade para os seus clientes. Parabéns a toda equipe!"
+  },
+];
+const ITEMS_VISIBLE = 3;
+
+export default function Avaliacao() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const maxIndex = profiles.length - ITEMS_VISIBLE;
+  const isAtStart = currentIndex <= 0;
+  const isAtEnd = currentIndex >= maxIndex;
+
+  const handleLeftClick = () => {
+    if (!isAtStart) {
+      setCurrentIndex(prevIndex => prevIndex - 1);
+    }
+  };
+
+  const handleRightClick = () => {
+    if (!isAtEnd) {
+      setCurrentIndex(prevIndex => prevIndex + 1);
+    }
+  };
+
   return (
-    <div className="flex">
-      <div>
-        <Image src={Left} alt="Esquerda" />
+    <div className='relative flex justify-center'>
+      {!isAtStart && (
+        <div className='absolute top-[50%] left-0 z-10' onClick={handleLeftClick}>
+          <Image src={Left} alt='Esquerda' />
+        </div>
+      )}
+      <div className="w-[1000px] overflow-hidden">
+        <motion.div className='carousel-ava'>
+          <motion.div
+            className='inner-ava'
+            animate={{ x: -(currentIndex * 350) }}
+            drag="x"
+            dragConstraints={{ left: -maxIndex * 350, right: 0 }} // Ajuste o valor 350 conforme necessário
+          >
+            {profiles.map(profile => (
+              <motion.div key={profile.user} className='item-ava'>
+                <Image src={profile.image} alt="Foto de perfil" width={60} height={60} />
+                <div>
+                  <h2>{profile.user}</h2>
+                  <p className="text-title">{profile.category}</p>
+                </div>
+                <div>
+                  <p className="text-justify font-medium">{profile.text}</p>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </motion.div>
       </div>
-      <div className="flex relative overflow-hidden w-[1200px] gap-[150px]">
-        <div className="w-[300px]">
-          <div className="flex">
-            <div>
-              <Image src={Profile} alt="Foto de perfil" />
-            </div>
-            <div>
-              <h2>Ghost Company</h2>
-              <p className="text-title">Agência de Publicidade</p>
-            </div>
-          </div>
-          <div>
-            <p className="text-justify font-medium">Uma empresa séria e dedicada em fornecer qualidade para os seus clientes. Parabéns a toda equipe!</p>
-          </div>
+      {!isAtEnd && (
+        <div className='absolute top-[50%] right-0 z-10' onClick={handleRightClick}>
+          <Image src={Right} alt='Direita' />
         </div>
-        <div className="w-[300px]">
-          <div className="flex">
-            <div>
-              <Image src={Profile} alt="Foto de perfil" />
-            </div>
-            <div>
-              <h2>Ghost Company</h2>
-              <p className="text-title">Agência de Publicidade</p>
-            </div>
-          </div>
-          <div>
-            <p className="text-justify font-medium">Uma empresa séria e dedicada em fornecer qualidade para os seus clientes. Parabéns a toda equipe!</p>
-          </div>
-        </div>
-        <div className="w-[300px]">
-          <div className="flex">
-            <div>
-              <Image src={Profile} alt="Foto de perfil" />
-            </div>
-            <div>
-              <h2>Ghost Company</h2>
-              <p className="text-title">Agência de Publicidade</p>
-            </div>
-          </div>
-          <div>
-            <p className="text-justify font-medium">Uma empresa séria e dedicada em fornecer qualidade para os seus clientes. Parabéns a toda equipe!</p>
-          </div>
-        </div>
-        <div className="w-[300px]">
-          <div className="flex">
-            <div>
-              <Image src={Profile} alt="Foto de perfil" />
-            </div>
-            <div>
-              <h2>Ghost Company</h2>
-              <p className="text-title">Agência de Publicidade</p>
-            </div>
-          </div>
-          <div>
-            <p className="text-justify font-medium">Uma empresa séria e dedicada em fornecer qualidade para os seus clientes. Parabéns a toda equipe!</p>
-          </div>
-        </div>
-        <div className="w-[300px]">
-          <div className="flex">
-            <div>
-              <Image src={Profile} alt="Foto de perfil" />
-            </div>
-            <div>
-              <h2>Ghost Company</h2>
-              <p className="text-title">Agência de Publicidade</p>
-            </div>
-          </div>
-          <div>
-            <p className="text-justify font-medium">Uma empresa séria e dedicada em fornecer qualidade para os seus clientes. Parabéns a toda equipe!</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <Image src={Right} alt="Direita" />
-      </div>
+      )}
     </div>
   )
 }
