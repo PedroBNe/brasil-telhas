@@ -14,9 +14,9 @@ export default function Social(){
         <h1 className="text-white">Redes Sociais</h1>
       </div>
       <div className="w-[20%] flex justify-between">
-        <Image width={50} height={50} src={Facebook} alt="Facebook" />
-        <Image width={50} height={50} src={Instagram} alt="Instagram" />
-        <Image width={50} height={50} src={Google} alt="Google" />
+        <Image width={50} height={50} src={Facebook} alt="Facebook" className="transition transform hover:scale-125" />
+        <Image width={50} height={50} src={Instagram} alt="Instagram" className="transition transform hover:scale-125"/>
+        <Image width={50} height={50} src={Google} alt="Google" className="transition transform hover:scale-125" />
       </div>
       <div className="w-[30%] flex items-center gap-4 text-sm font-bold text-title">
         <Link className="min-w-[50%] bg-white rounded-md p-3 whitespace-nowrap flex justify-center" href="">Saber mais</Link>

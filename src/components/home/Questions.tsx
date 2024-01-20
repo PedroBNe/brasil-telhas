@@ -20,7 +20,7 @@ export default function Question() {
       <div>
         <ul className="list-questions">
           <div className="flex title" onClick={() => setActiveList(activeList === 1 ? null : 1)}>
-            <Image src={Menu} alt="menu" width={24} height={24} />
+            <Image src={Menu} alt="menu" width={24} height={24} className={activeList === 1 ? "transition transform -rotate-180 duration-300" : ""} />
             <p className="font-bold">Como posso escolher o perfil de telha metálica adequado para o meu projeto?</p>
           </div>
           {activeList === 1 && (
@@ -38,7 +38,7 @@ export default function Question() {
       <div>
         <ul className="list-questions">
           <div className="flex" onClick={() => setActiveList(activeList === 2 ? null : 2)}>
-            <Image src={Menu} alt="menu" width={24} height={24} />
+            <Image src={Menu} alt="menu" width={24} height={24} className={activeList === 2 ? "transition transform -rotate-180 duration-300" : ""} />
             <p className="font-bold">Vocês oferecem garantia para as telhas metálicas?</p>
           </div>
           {activeList === 2 && (
@@ -56,7 +56,7 @@ export default function Question() {
       <div>
         <ul className="list-questions">
           <div className="flex" onClick={() => setActiveList(activeList === 3 ? null : 3)}>
-            <Image src={Menu} alt="menu" width={24} height={24} />
+            <Image src={Menu} alt="menu" width={24} height={24} className={activeList === 3 ? "transition transform -rotate-180 duration-300" : ""} />
             <p className="font-bold">Qual é o prazo de entrega das telhas metálicas?</p>
           </div>
           {activeList === 3 && (
@@ -74,7 +74,7 @@ export default function Question() {
       <div>
         <ul className="list-questions">
           <div className="flex" onClick={() => setActiveList(activeList === 4 ? null : 4)}>
-            <Image src={Menu} alt="menu" width={24} height={24} />
+            <Image src={Menu} alt="menu" width={24} height={24} className={activeList === 4 ? "transition transform -rotate-180 duration-300" : ""} />
             <p className="font-bold">Quais tamanhos vocês produzem?</p>
           </div>
           {activeList === 4 && (
@@ -92,7 +92,7 @@ export default function Question() {
       <div>
         <ul className="list-questions">
           <div className="flex" onClick={() => setActiveList(activeList === 5 ? null : 5)}>
-            <Image src={Menu} alt="menu" width={24} height={24} />
+            <Image src={Menu} alt="menu" width={24} height={24} className={activeList === 5 ? "transition transform -rotate-180 duration-300" : ""} />
             <p className="font-bold">Quais tamanhos vocês produzem?</p>
           </div>
           {activeList === 5 && (

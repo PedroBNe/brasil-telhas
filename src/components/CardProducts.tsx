@@ -11,9 +11,9 @@ interface CardProductsProps {
 
 const CardProducts: React.FC<CardProductsProps> = ({img, text, title, btn, classe }) => {
   return (
-    <div className="w-[25%] bg-product flex flex-col items-center p-6 relative shadow-2xl">
+    <div className="w-[25%] bg-product hover:bg-product-select flex flex-col items-center p-6 relative shadow-2xl transition transform hover:scale-110">
       <div className={classe}>
-        <Image src={img} alt="Produto" width={350} height={100} />
+        <Image className="transition transform hover:scale-110" src={img} alt="Produto" width={350} height={100} />
       </div>
       <div className="font-bold text-xl text-white mt-[70%]">
         <h3>{title}</h3>
