@@ -34,7 +34,7 @@ const profiles = [
     text: "Uma empresa séria e dedicada em fornecer qualidade para os seus clientes. Parabéns a toda equipe!"
   },
   {
-    user: "User4",
+    user: "User5",
     category: "Agência de Publicidade",
     image: Profile,
     text: "Uma empresa séria e dedicada em fornecer qualidade para os seus clientes. Parabéns a toda equipe!"

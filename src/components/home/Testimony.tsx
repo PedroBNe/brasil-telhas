@@ -22,21 +22,21 @@ export default function Testimony(){
       testimony: [
         {
           quality: 5,
-          title: "Alan Paulo de Souza",
-          profession: "Gestor de Projetos - Ghost Company",
-          text: "“Uma obra realizada com os nossos produtos que oferece qualidade e garantia de durabilidade para o governo estadual. Além de fornecer segurança para o público, a estética entregue encanta.”"
+          title: "Pedro",
+          profession: "Dev",
+          text: "“Teste teste.”"
         }
       ],
       images: [
-        { src: Menor, alt: "Menor 1" },
-        { src: Maior, alt: "Maior 1" }
+        { src: Video, alt: "Menor 2" }, 
+        { src: Foto, alt: "Maior 2" }  
       ]
     },
     { 
       id: 2,
       testimony: [
         {
-          quality: 5,
+          quality: 3,
           title: "Alan Paulo de Souza",
           profession: "Gestor de Projetos - Ghost Company",
           text: "“Uma obra realizada com os nossos produtos que oferece qualidade e garantia de durabilidade para o governo estadual. Além de fornecer segurança para o público, a estética entregue encanta.”"
