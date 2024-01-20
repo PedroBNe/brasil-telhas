@@ -31,7 +31,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 w-full h-20 flex justify-between items-center z-30 ${isAtTop ? "bg-transparent": "bg-white"}`}>
+    <header className={`fixed top-0 w-full h-20 flex justify-between items-center z-30 transition duration-300 ${isAtTop ? "bg-transparent": "bg-white"}`}>
       <div className="w-[50%] pl-[6%]">
         {isAtTop ? <Image
           src={Logo}
