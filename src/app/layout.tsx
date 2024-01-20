@@ -23,8 +23,8 @@ export default function RootLayout({
       <body className={montserrat.className}>
       <div className="relative bg-img_maquina_telhas w-full h-full bg-cover bg-center">
         <div className="absolute inset-0 bg-img_maquina_telhas brightness-25"></div>
-          <div className="relative">
-            <Header />
+        <Header />
+          <div className="relative h-[700px] flex items-center">
             <Banner />
           </div>
         </div>
