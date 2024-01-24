@@ -43,11 +43,13 @@ const Header = () => {
       }`}
     >
       <div className="w-[50%] pl-[6%]">
-        {isAtTop ? (
-          <Image src={Logo} alt="Logo" width={65} height={45} />
-        ) : (
-          <Image src={LogoPrincipal} alt="Logo" width={65} height={45} />
-        )}
+        <Link href="/">
+          {isAtTop ? (
+            <Image src={Logo} alt="Logo" width={65} height={45} />
+          ) : (
+            <Image src={LogoPrincipal} alt="Logo" width={65} height={45} />
+          )}
+        </Link>
       </div>
       <div className="w-[50%] pr-[6%]">
         <nav
@@ -61,10 +63,10 @@ const Header = () => {
           <Link className={`${produtosStyle}`} href="/produtos">
             Produtos
           </Link>
-          <Link className={`${portfolioStyle}`} href="/portfolio">
+          <Link className={`${portfolioStyle}`} href="/#portfolio">
             Portfólio
           </Link>
-          <Link className={`${vantagensStyle}`} href="/vantagens">
+          <Link className={`${vantagensStyle}`} href="/#vantagens">
             Vantagens
           </Link>
           <Link className={`${contatoStyle}`} href="/contato">

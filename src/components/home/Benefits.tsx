@@ -6,7 +6,7 @@ import Button from "../Button";
 
 export default function Benefits() {
   return (
-    <div className="flex justify-between">
+    <div id="vantagens" className="flex justify-between">
       <div className="w-[28%] flex justify-between flex-col">
         <div>
           <Image src={Logo} alt="Logo" />
