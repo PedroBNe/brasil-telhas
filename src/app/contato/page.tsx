@@ -1,7 +1,11 @@
-export default function Contato(){
+import { FormContact } from "@/components/contato/FormContact";
+import Searching from "@/components/contato/Searching";
+
+export default function Contato() {
   return (
     <div>
-      contato
+      <Searching />
+      <FormContact />
     </div>
-  )
+  );
 }
