@@ -1,4 +1,5 @@
 import Expansion from "@/components/sobre/Expansion";
+import TalentsForm from "@/components/trabalhe/TalentsForm";
 import WhoWeAre from "@/components/sobre/WhoWeAre";
 
 export default function Sobre() {
