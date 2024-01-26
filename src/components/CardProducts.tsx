@@ -7,6 +7,7 @@ interface CardProductsProps {
   title: string;
   btn: string;
   classe: string;
+  margintop?: boolean;
 }
 
 const CardProducts: React.FC<CardProductsProps> = ({
@@ -15,6 +16,7 @@ const CardProducts: React.FC<CardProductsProps> = ({
   title,
   btn,
   classe,
+  margintop = true,
 }) => {
   return (
     <div className="w-[25%] bg-product hover:bg-product-select flex flex-col items-center p-6 relative shadow-2xl transition transform hover:scale-110">
@@ -27,13 +29,17 @@ const CardProducts: React.FC<CardProductsProps> = ({
           height={100}
         />
       </div>
-      <div className="font-bold text-xl text-white mt-[70%]">
+      <div
+        className={`font-bold text-xl text-white ${
+          margintop ? "mt-[70%]" : "mt-[70%]"
+        }`}
+      >
         <h3>{title}</h3>
       </div>
       <div className="font-normal text-sm text-white text-justify">
         <p>{text}</p>
       </div>
-      <div className="pt-8">
+      <div className="pt-8 shadow-2xl transition transform hover:scale-110">
         <Link
           className="bg-white font-bold text-sm text-product rounded px-1 py-2 shadow-lg"
           href=""

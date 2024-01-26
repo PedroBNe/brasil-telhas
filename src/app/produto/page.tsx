@@ -1,15 +1,14 @@
 import Conheca from "@/components/Conheca";
-import Benefits from "@/components/home/Benefits";
 import Social from "@/components/home/Social";
 import Success from "@/components/home/Success";
 import Testimony from "@/components/home/Testimony";
-import Products from "@/components/products/products";
+import ProductDetails from "@/components/product/ProductDetails";
 
-export default function Produtos() {
+export default function Produto() {
   return (
     <div className="flex flex-col gap-20">
       <Conheca />
-      <Products />
+      <ProductDetails />
       <Success />
       <Social />
       <Testimony />
