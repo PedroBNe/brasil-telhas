@@ -8,6 +8,7 @@ interface CardProductsProps {
   btn: string;
   classe: string;
   margintop?: boolean;
+  link: string;
 }
 
 const CardProducts: React.FC<CardProductsProps> = ({
@@ -17,6 +18,7 @@ const CardProducts: React.FC<CardProductsProps> = ({
   btn,
   classe,
   margintop = true,
+  link,
 }) => {
   return (
     <div className="w-[25%] bg-product hover:bg-product-select flex flex-col items-center p-6 relative shadow-2xl transition transform hover:scale-110">
@@ -42,7 +44,7 @@ const CardProducts: React.FC<CardProductsProps> = ({
       <div className="pt-8 shadow-2xl transition transform hover:scale-110">
         <Link
           className="bg-white font-bold text-sm text-product rounded px-1 py-2 shadow-lg"
-          href=""
+          href={`/produto/${link}`}
         >
           {btn}
         </Link>
