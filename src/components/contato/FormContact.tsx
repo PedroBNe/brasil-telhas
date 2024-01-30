@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export function FormContact() {
   const [formData, setFormData] = useState({
@@ -19,7 +20,31 @@ export function FormContact() {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
-    console.log(formData);
+    const templateParams = {
+      from_name: formData.nomeCompleto,
+      email: formData.email,
+      telefone: formData.telefone,
+      nomeEmpresa: formData.nomeEmpresa,
+      mensagem: formData.mensagem,
+    };
+
+    emailjs
+      .send(
+        "service_ae7r5gi",
+        "template_y54fjw8",
+        templateParams,
+        "AhwHJTIIyg9zOzEqX"
+      )
+      .then(() => {
+        console.log("Email enviado!");
+        setFormData({
+          nomeCompleto: "",
+          email: "",
+          telefone: "",
+          nomeEmpresa: "",
+          mensagem: "",
+        });
+      });
   };
 
   return (
@@ -53,7 +78,7 @@ export function FormContact() {
               />
               <input
                 type="tel"
-                name="Telefone*"
+                name="telefone"
                 placeholder="Telefone:"
                 className="bg-input w-[675px] h-[50px] rounded pl-4"
                 value={formData.telefone}
