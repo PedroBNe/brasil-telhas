@@ -1,8 +1,6 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
-import Anexo from "@/assets/Form/Attach.png";
 
 export function FormContact() {
   const [formData, setFormData] = useState({
@@ -80,11 +78,6 @@ export function FormContact() {
                 value={formData.mensagem}
                 onChange={handleChange}
               />
-              <label className="w-[580PX] h-[50px] bg-input rounded p-4 flex justify-between cursor-pointer">
-                <p className="opacity-60">Anexo:</p>
-                <input type="file" name="anexo" hidden />
-                <Image src={Anexo} alt="Anexo" width={30} height={22} />
-              </label>
             </div>
           </div>
           <div className="flex justify-end">

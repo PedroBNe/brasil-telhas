@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import Anexo from "@/assets/Form/Attach.png";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function TalentsForm() {
   const [formData, setFormData] = useState({
@@ -11,8 +12,6 @@ export default function TalentsForm() {
     email: "",
     idade: "",
     telefone: "",
-    nomeEmpresa: "",
-    mensagem: "",
   });
 
   const handleChange = (e: any) => {
@@ -23,7 +22,29 @@ export default function TalentsForm() {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
-    console.log(formData);
+    const templateParams = {
+      from_name: formData.nomeCompleto,
+      email: formData.email,
+      idade: formData.idade,
+      tel: formData.telefone,
+    };
+
+    emailjs
+      .send(
+        "service_ae7r5gi",
+        "template_87bo6oj",
+        templateParams,
+        "AhwHJTIIyg9zOzEqX"
+      )
+      .then(() => {
+        console.log("Email enviado!");
+        setFormData({
+          nomeCompleto: "",
+          email: "",
+          idade: "",
+          telefone: "",
+        });
+      });
   };
 
   return (
@@ -81,11 +102,6 @@ export default function TalentsForm() {
                   required
                 />
               </div>
-              <label className="w-full h-[50px] bg-input rounded p-4 flex justify-between cursor-pointer">
-                <p className="opacity-60">Anexo:</p>
-                <input type="file" name="anexo" hidden />
-                <Image src={Anexo} alt="Anexo" width={30} height={22} />
-              </label>
             </div>
           </div>
           <div className="flex justify-end">
