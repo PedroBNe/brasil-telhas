@@ -6,8 +6,8 @@ import Button from "../Button";
 
 export default function Benefits() {
   return (
-    <div id="vantagens" className="flex justify-between">
-      <div className="w-[28%] flex justify-between flex-col">
+    <div id="vantagens" className="flex justify-between flex-col md:flex-row">
+      <div className="md:w-[28%] flex justify-between flex-col">
         <div>
           <Image src={Logo} alt="Logo" />
         </div>
@@ -21,7 +21,7 @@ export default function Benefits() {
           <Image src={Banner} alt="Banner" width={340} height={450} />
         </div>
       </div>
-      <div className="w-[28%] flex justify-between flex-col mt-[2%] text-justify">
+      <div className="md:w-[28%] flex justify-between flex-col mt-[2%] text-justify">
         <div className="flex justify-center text-center">
           <Button
             link="https://api.whatsapp.com/send?phone=5548999040036"
@@ -61,7 +61,7 @@ export default function Benefits() {
           </p>
         </div>
       </div>
-      <div className="w-[28%] flex justify-between flex-col mt-[2%]">
+      <div className="md:w-[28%] flex justify-between flex-col mt-[2%]">
         <div>
           <h2 className="text-title hover:text-text-select transition duration-300 pb-[3%]">
             Versatilidade no Design

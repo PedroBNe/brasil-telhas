@@ -280,3 +280,9 @@ img {
   border-left: 1px solid gray;
   border-top: 1px solid gray;
 }
+
+@media (max-width: 768px) {
+  .list-questions li {
+    width: 100%;
+  }
+}

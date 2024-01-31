@@ -83,7 +83,7 @@ export default function Avaliacao() {
             className="inner-ava"
             animate={{ x: -(currentIndex * 350) }}
             drag="x"
-            dragConstraints={{ left: -maxIndex * 350, right: 0 }} // Ajuste o valor 350 conforme necessário
+            dragConstraints={{ left: -maxIndex * 350, right: 0 }}
           >
             {profiles.map((profile) => (
               <motion.div key={profile.user} className="item-ava">

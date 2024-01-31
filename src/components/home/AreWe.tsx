@@ -6,11 +6,11 @@ import Link from "next/link";
 
 export default function AreWe() {
   return (
-    <div className="flex justify-between mt-8">
-      <div className="w-[50%]">
+    <div className="flex flex-col md:flex-row justify-between mt-8">
+      <div className="md:w-[50%]">
         <Image src={Are} alt="Imagem" width={698} height={382} />
       </div>
-      <div className="w-[45%]">
+      <div className="md:w-[45%]">
         <h1>OK... mas quem somos?</h1>
         <p className="text-title pb-4 text-justify">Somos a MAIOR DO SUL!!</p>
         <p className="font-medium pb-4 text-justify">

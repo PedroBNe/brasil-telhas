@@ -8,12 +8,12 @@ import Link from "next/link";
 
 export default function Social() {
   return (
-    <div className="bg-social flex justify-around h-40 w-[112%] ml-[-7%] p-[4%]">
-      <div className="w-[30%] text-white flex flex-col justify-center">
+    <div className="bg-social flex flex-col md:flex-row justify-around gap-6 md:gap-0 md:h-40 w-[112%] ml-[-7%] p-[4%]">
+      <div className="md:w-[30%] text-white flex flex-col justify-center">
         <p>Veja mais casos como esses em nossas</p>
         <h1 className="text-white">Redes Sociais</h1>
       </div>
-      <div className="w-[20%] flex justify-between">
+      <div className="md:w-[20%] flex justify-around md:justify-between">
         <Link href="https://www.facebook.com/BrasilTelhasMetalicas01">
           <Image
             width={50}
@@ -42,15 +42,15 @@ export default function Social() {
           />
         </Link>
       </div>
-      <div className="w-[30%] flex items-center gap-4 text-sm font-bold text-title">
+      <div className="md:w-[30%] flex justify-between items-center gap-4 text-sm font-bold text-title">
         <Link
-          className="min-w-[50%] bg-white rounded-md p-3 whitespace-nowrap flex justify-center"
+          className="min-w-[40%] md:min-w-[50%] bg-white rounded-md p-3 whitespace-nowrap flex justify-center"
           href="/sobre"
         >
           Saber mais
         </Link>
         <Link
-          className="min-w-[50%] bg-white rounded-md p-3 whitespace-nowrap flex justify-center"
+          className="min-w-[40%] md:min-w-[50%] bg-white rounded-md p-3 whitespace-nowrap flex justify-center"
           href="https://api.whatsapp.com/send?phone=5548999040036"
         >
           Falar com consultor

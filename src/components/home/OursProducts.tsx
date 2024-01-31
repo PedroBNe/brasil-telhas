@@ -14,10 +14,10 @@ export default function OursProducts() {
         </p>
         <h1 className="text-5xl font-bold">Nossos produtos</h1>
       </div>
-      <div className="flex justify-between w-[90%] mx-auto mt-20 relative">
+      <div className="flex flex-col md:flex-row justify-between w-[90%] mx-auto mt-20 relative gap-6 md:gap-0">
         <CardProducts
           link="/1"
-          classe="flex justify-center absolute top-[-10px] w-[130%]"
+          classe="flex justify-center absolute top-[-10px] w-[110%] md:w-[130%]"
           img={Telha}
           text="Explore nossa variedade de telhas metálicas duráveis, ideais para uma ampla gama de aplicações. Desde coberturas residenciais até projetos industriais"
           title="Telhas Metálicas"

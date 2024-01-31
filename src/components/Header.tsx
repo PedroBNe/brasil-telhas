@@ -55,7 +55,10 @@ const Header = () => {
       </div>
       <div className="w-[50%] pr-[6%]">
         <div className="md:hidden">
-          <span onClick={() => setOpen((ev) => !ev)}>
+          <span
+            onClick={() => setOpen((ev) => !ev)}
+            className="flex justify-end"
+          >
             {isAtTop ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"

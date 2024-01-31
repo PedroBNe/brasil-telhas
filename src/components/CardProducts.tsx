@@ -21,7 +21,7 @@ const CardProducts: React.FC<CardProductsProps> = ({
   link,
 }) => {
   return (
-    <div className="w-[25%] bg-product hover:bg-product-select flex flex-col items-center p-6 relative shadow-2xl transition transform hover:scale-110">
+    <div className="w-full md:w-[32%] lg:w-[25%] bg-product hover:bg-product-select flex flex-col items-center p-6 relative shadow-2xl transition transform hover:scale-110">
       <div className={classe}>
         <Image
           className="transition transform hover:scale-110"

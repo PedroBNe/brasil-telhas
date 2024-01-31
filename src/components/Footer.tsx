@@ -21,8 +21,8 @@ import Button from "./Button";
 export default function Footer() {
   return (
     <footer>
-      <div className="flex my-20">
-        <div className="w-[40%]">
+      <div className="flex flex-col md:flex-row my-20">
+        <div className="md:w-[40%]">
           <div className="mb-[50px]">
             <h1 className="text-title font-bold text-5xl">Entre em contato</h1>
             <p className="text-title font-normal text-sm">
@@ -56,7 +56,7 @@ export default function Footer() {
               <p>(48) 3533-0000</p>
             </div>
           </div>
-          <div className="flex">
+          <div className="flex gap-6">
             <Link
               className="w-[15%] flex items-center"
               href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LKoyzzMyMzEzYLRSNaiwNDUyMk6xSDRNNbEwskw2twIKWaSYJJuYJVqmJhskJadZeEkkFSUWZ-YolKTmZCQWK-SmlhxemJOZnFgMAH-AGOo&q=brasil+telhas+met%C3%A1licas&rlz=1C1FKPE_pt-PTBR1080BR1080&oq=bra&gs_lcrp=EgZjaHJvbWUqFQgBEC4YJxivARjHARiABBiKBRiOBTIGCAAQRRg8MhUIARAuGCcYrwEYxwEYgAQYigUYjgUyBggCEEUYOTITCAMQLhiDARjHARixAxjRAxiABDIGCAQQRRg9MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTczNWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#ip=1&lrd=0x95223d8a5e4829c7:0x98d4c46a9ec0bcf8,1,,,,"
@@ -111,12 +111,12 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="w-[60%]">
+        <div className="md:w-[60%]">
           <div className="mb-11">
             <Map />
           </div>
-          <div className="flex gap-6">
-            <div className="w-[60%] text-title">
+          <div className="flex flex-col md:flex-row gap-6">
+            <div className="md:w-[60%] text-title">
               <p className="font-normal">Quer saber mais?</p>
               <p className="font-bold">
                 Entre em contato agora mesmo com nossa equipe através do
@@ -132,11 +132,11 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex">
-        <div className="w-[25%]">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-0">
+        <div className="md:w-[25%]">
           <Image src={LogoFooter} alt="Logo" width={160} height={100} />
         </div>
-        <div className="w-[25%]">
+        <div className="md:w-[25%]">
           <ul className="text-sm font-normal">
             <p className="text-title font-bold">Links</p>
             <li>
@@ -153,7 +153,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="w-[25%]">
+        <div className="md:w-[25%]">
           <ul className="text-sm font-normal">
             <p className="text-title font-bold">Políticas</p>
             <li>
@@ -170,7 +170,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="w-[25%]">
+        <div className="md:w-[25%]">
           <ul className="text-sm font-normal">
             <p className="text-title font-bold">Redes Sociais</p>
             <li>
@@ -191,15 +191,15 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="flex font-normal text-xs my-6">
-        <div>
+      <div className="flex font-normal text-xs my-6 relative">
+        <div className="mb-14 md:mb-0">
           <p className="pb-2">CNPJ: 44.159.581/0001-84</p>
           <div>
             <p>Copyright © 2023, Brasil Telhas Metálicas.</p>
             <p>Todos os Direitos Reservados.</p>
           </div>
         </div>
-        <div className="flex flex-col items-center absolute left-1/2 transform -translate-x-1/2">
+        <div className="flex flex-col items-center absolute left-1/2 transform -translate-x-1/2 bottom-0">
           <p>Developer</p>
           <Image src={FooterGhost} alt="Logo rodapé" width={130} height={30} />
         </div>
