@@ -44,7 +44,10 @@ export default function ProductDetails({ params }: PageDetailProps) {
             <p className="mb-2">{product?.description}</p>
             <p className="mb-4">{product?.description2}</p>
             <div className="mb-4">
-              <Button link="" text="FAZER ORÇAMENTO AGORA" />
+              <Button
+                link="https://api.whatsapp.com/send?phone=5548999040036"
+                text="FAZER ORÇAMENTO AGORA"
+              />
             </div>
             <h2 className="mb-4">Vantagens</h2>
             <ul className="mb-4">
@@ -75,7 +78,10 @@ export default function ProductDetails({ params }: PageDetailProps) {
               <Button link="/produtos" text="Ver produtos" />
             </div>
             <div>
-              <Button link="" text="Falar com representante" />
+              <Button
+                link="https://api.whatsapp.com/send?phone=5548999040036"
+                text="Falar com representante"
+              />
             </div>
           </div>
         </div>

@@ -35,7 +35,7 @@ export default function VemTrabalhar() {
         </div>
         <div>
           <div className="w-[350px]">
-            <Button link="" text="CONHECER VAGAS DISPONÍVEIS" />
+            <Button link="/trabalhe#jobs" text="CONHECER VAGAS DISPONÍVEIS" />
           </div>
         </div>
       </div>

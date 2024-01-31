@@ -23,7 +23,10 @@ export default function Benefits() {
       </div>
       <div className="w-[28%] flex justify-between flex-col mt-[2%] text-justify">
         <div className="flex justify-center text-center">
-          <Button link="" text="Falar com consultor" />
+          <Button
+            link="https://api.whatsapp.com/send?phone=5548999040036"
+            text="Falar com consultor"
+          />
         </div>
         <div>
           <h2 className="text-title hover:text-text-select transition duration-300 pb-[3%]">
@@ -91,7 +94,7 @@ export default function Benefits() {
           </p>
         </div>
         <div className="flex justify-center text-center">
-          <Button link="" text="Saber mais agora!" />
+          <Button link="/sobre" text="Saber mais agora!" />
         </div>
       </div>
     </div>

@@ -44,7 +44,7 @@ export default function Jobs() {
   ];
 
   return (
-    <div className="mt-16">
+    <div className="mt-16" id="jobs">
       <div>
         <h1 className="mb-2">Oportunidades de Emprego</h1>
         <h2>Faça parte da nossa equipe!</h2>

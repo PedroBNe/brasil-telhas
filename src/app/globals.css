@@ -2,67 +2,148 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-h1{
-	@apply font-bold text-5xl text-title;
+h1 {
+  @apply font-bold text-xl lg:text-5xl text-title;
 }
 
-h2{
-	@apply font-bold text-2xl text-title;
+h2 {
+  @apply font-bold text-base lg:text-2xl text-title;
 }
 
-p{
-	@apply font-normal text-sm;
+p {
+  @apply font-normal text-xs lg:text-sm;
 }
 
 .carousel {
   position: relative;
   overflow: hidden;
-	height: 300px; 
-	margin-top: 2%;
+  height: 300px;
+  margin-top: 2%;
 }
 
 .carousel-slide {
@@ -72,14 +153,14 @@ p{
 
 .slide {
   display: flex;
-	position: absolute;
-	top: 0;
+  position: absolute;
+  top: 0;
   gap: 1%;
   min-width: 100%;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   opacity: 0;
   transform: translateX(-100%);
-	align-items: center;
+  align-items: center;
 }
 
 .slide.active {
@@ -87,90 +168,115 @@ p{
   transform: translateX(0%);
 }
 
-.prev-button{
-	position: absolute;
+.prev-button {
+  position: absolute;
   top: 50%;
   z-index: 1;
-	left: 2.5%;
+  left: 2.5%;
 }
 
-.next-button{
-	position: absolute;
+.next-button {
+  position: absolute;
   top: 50%;
   z-index: 1;
   right: 2.5%;
 }
 
-.testimony{
-	position: relative;
+.testimony {
+  position: relative;
   overflow: hidden;
-	height: 460px; 
-	margin-top: 2%;
+  height: 460px;
+  margin-top: 2%;
 }
 
-.slide-testion{
-	display: flex;
-	justify-content: space-evenly;
-	gap: 5%;
+.slide-testion {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5%;
 }
 
-.prev-testimony{
-	position: absolute;
+.prev-testimony {
+  position: absolute;
   top: 50%;
   z-index: 1;
-	left: 0;
+  left: 0;
 }
 
-.next-testimony{
-	position: absolute;
+.next-testimony {
+  position: absolute;
   top: 50%;
   z-index: 1;
   right: 0;
 }
 
 .list-questions li {
-  transform: translateY(10px); 
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; 
+  transform: translateY(10px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .list-questions li.active {
-  opacity: 1; 
+  opacity: 1;
   transform: translateY(0);
 }
 
-.list-questions p, img{
-	cursor: pointer;
+.list-questions p,
+img {
+  cursor: pointer;
 }
 
-.list-questions li{
-	width: 70%;
+.list-questions li {
+  width: 70%;
 }
 
-.carousel-ava{
-	overflow: hidden;
+.carousel-ava {
+  overflow: hidden;
 }
 
-.inner-ava{
-	width: 1000px;
-	gap: 50px;
-	display: flex;
+.inner-ava {
+  width: 1000px;
+  gap: 50px;
+  display: flex;
 }
 
-.item-ava{
-	min-width: 300px;
-	width: 300px;
-	padding: 14px;
+.item-ava {
+  min-width: 300px;
+  width: 300px;
+  padding: 14px;
 }
 
-.border-header{
-	border-bottom: solid 1px #009A22;
+.border-header {
+  border-bottom: solid 1px #009a22;
 }
 
 .svg-hover {
   fill: black;
-	transition: fill 0.3s;
+  transition: fill 0.3s;
 }
 
-.svg-hover:hover{
-	fill: #3259A6;
+.svg-hover:hover {
+  fill: #3259a6;
+}
+
+.dropDown {
+  position: absolute;
+  top: 4.5rem;
+  right: 1rem;
+  width: 120px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: white;
+  border: 1px solid gray;
+}
+
+.dropDown::before {
+  content: "";
+  position: absolute;
+  top: -0.8rem;
+  right: 2rem;
+  width: 25px;
+  height: 25px;
+  transform: rotate(45deg);
+  background-color: white;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
 }

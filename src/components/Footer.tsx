@@ -57,7 +57,10 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex">
-            <Link className="w-[15%] flex items-center" href="/">
+            <Link
+              className="w-[15%] flex items-center"
+              href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LKoyzzMyMzEzYLRSNaiwNDUyMk6xSDRNNbEwskw2twIKWaSYJJuYJVqmJhskJadZeEkkFSUWZ-YolKTmZCQWK-SmlhxemJOZnFgMAH-AGOo&q=brasil+telhas+met%C3%A1licas&rlz=1C1FKPE_pt-PTBR1080BR1080&oq=bra&gs_lcrp=EgZjaHJvbWUqFQgBEC4YJxivARjHARiABBiKBRiOBTIGCAAQRRg8MhUIARAuGCcYrwEYxwEYgAQYigUYjgUyBggCEEUYOTITCAMQLhiDARjHARixAxjRAxiABDIGCAQQRRg9MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTczNWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#ip=1&lrd=0x95223d8a5e4829c7:0x98d4c46a9ec0bcf8,1,,,,"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="45"
@@ -71,7 +74,10 @@ export default function Footer() {
                 />
               </svg>
             </Link>
-            <Link className="w-[15%] flex items-center" href="/">
+            <Link
+              className="w-[15%] flex items-center"
+              href="https://www.instagram.com/brasil.telhas/"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -86,7 +92,10 @@ export default function Footer() {
                 ></path>
               </svg>
             </Link>
-            <Link className="w-[15%] flex items-center" href="/">
+            <Link
+              className="w-[15%] flex items-center"
+              href="https://www.facebook.com/BrasilTelhasMetalicas01"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
@@ -96,19 +105,6 @@ export default function Footer() {
               >
                 <path
                   d="M20 3.39999C10.8334 3.39999 3.33337 10.8833 3.33337 20.1C3.33337 28.4333 9.43337 35.35 17.4 36.6V24.9333H13.1667V20.1H17.4V16.4167C17.4 12.2333 19.8834 9.93333 23.7 9.93333C25.5167 9.93333 27.4167 10.25 27.4167 10.25V14.3667H25.3167C23.25 14.3667 22.6 15.65 22.6 16.9667V20.1H27.2334L26.4834 24.9333H22.6V36.6C26.5274 35.9797 30.1037 33.9759 32.6833 30.9501C35.2628 27.9243 36.6756 24.0761 36.6667 20.1C36.6667 10.8833 29.1667 3.39999 20 3.39999Z"
-                  className="svg-hover"
-                />
-              </svg>
-            </Link>
-            <Link className="w-[15%] flex items-center" href="/">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="38"
-                height="38"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
                   className="svg-hover"
                 />
               </svg>
@@ -128,7 +124,10 @@ export default function Footer() {
               </p>
             </div>
             <div className="flex items-center">
-              <Button link="/" text="Chamar no Whatsapp" />
+              <Button
+                link="https://api.whatsapp.com/send?phone=5548999040036"
+                text="Chamar no Whatsapp"
+              />
             </div>
           </div>
         </div>
@@ -141,19 +140,16 @@ export default function Footer() {
           <ul className="text-sm font-normal">
             <p className="text-title font-bold">Links</p>
             <li>
-              <Link href="/">Navegar no catálogo</Link>
+              <Link href="/produtos">Navegar no catálogo</Link>
             </li>
             <li>
-              <Link href="/">Conhecer empresa</Link>
-            </li>
-            <li>
-              <Link href="/">Acompanhar notícias</Link>
+              <Link href="/sobre">Conhecer empresa</Link>
             </li>
             <li>
               <Link href="/trabalhe">Trabalhar na Brasil Telhas</Link>
             </li>
             <li>
-              <Link href="/">Opções de contato</Link>
+              <Link href="/contato">Opções de contato</Link>
             </li>
           </ul>
         </div>
@@ -178,13 +174,19 @@ export default function Footer() {
           <ul className="text-sm font-normal">
             <p className="text-title font-bold">Redes Sociais</p>
             <li>
-              <Link href="/">Nos siga no Instagram</Link>
+              <Link href="https://www.instagram.com/brasil.telhas/">
+                Nos siga no Instagram
+              </Link>
             </li>
             <li>
-              <Link href="/">Acompanhe nossa página no Facebook</Link>
+              <Link href="https://www.facebook.com/BrasilTelhasMetalicas01">
+                Acompanhe nossa página no Facebook
+              </Link>
             </li>
             <li>
-              <Link href="/">Nos avalie no Google+</Link>
+              <Link href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LKoyzzMyMzEzYLRSNaiwNDUyMk6xSDRNNbEwskw2twIKWaSYJJuYJVqmJhskJadZeEkkFSUWZ-YolKTmZCQWK-SmlhxemJOZnFgMAH-AGOo&q=brasil+telhas+met%C3%A1licas&rlz=1C1FKPE_pt-PTBR1080BR1080&oq=bra&gs_lcrp=EgZjaHJvbWUqFQgBEC4YJxivARjHARiABBiKBRiOBTIGCAAQRRg8MhUIARAuGCcYrwEYxwEYgAQYigUYjgUyBggCEEUYOTITCAMQLhiDARjHARixAxjRAxiABDIGCAQQRRg9MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTczNWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#ip=1&lrd=0x95223d8a5e4829c7:0x98d4c46a9ec0bcf8,1,,,,">
+                Nos avalie no Google+
+              </Link>
             </li>
           </ul>
         </div>

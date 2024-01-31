@@ -84,10 +84,13 @@ export default function WhoWeAre() {
         </div>
         <div className="flex gap-4">
           <div>
-            <Button link="" text="Conhecer mais agora!" />
+            <Button link="/sobre" text="Conhecer mais agora!" />
           </div>
           <div>
-            <Button link="" text="Falar com consultor" />
+            <Button
+              link="https://api.whatsapp.com/send?phone=5548999040036"
+              text="Falar com consultor"
+            />
           </div>
         </div>
       </div>

@@ -99,10 +99,13 @@ export default function Expansion() {
           </div>
           <div className="w-[42%] flex gap-8">
             <div className="w-[250px]">
-              <Button link="" text="Conhecer mais agora!" />
+              <Button link="/sobre" text="Conhecer mais agora!" />
             </div>
             <div className="w-[250px]">
-              <Button link="" text="Falar com consultor" />
+              <Button
+                link="https://api.whatsapp.com/send?phone=5548999040036"
+                text="Falar com consultor"
+              />
             </div>
           </div>
         </div>

@@ -26,13 +26,13 @@ export default function AreWe() {
         </p>
         <div className="flex gap-7">
           <Link
-            href=""
+            href="/sobre"
             className="bg-button h-12 w-64 rounded-md font-bold text-sm text-center text-white flex justify-center items-center"
           >
             Conhecer a Brasil Telhas
           </Link>
           <Link
-            href=""
+            href="https://api.whatsapp.com/send?phone=5548999040036"
             className="bg-button h-12 w-64 rounded-md font-bold text-sm text-center text-white flex justify-center items-center"
           >
             Falar com consultor
