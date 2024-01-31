@@ -12,7 +12,7 @@ export default function Benefits() {
           <Image src={Logo} alt="Logo" />
         </div>
         <div className="text-title my-[8%]">
-          <h1 className="font-bold text-5xl pb-[1%]">Vantagens</h1>
+          <h1 className="font-bold text-3xl md:text-5xl pb-[1%]">Vantagens</h1>
           <p className="font-normal text-sm">
             Descubra o que você ganha ao utilizar nossos produtos em sua obra
           </p>
@@ -21,7 +21,7 @@ export default function Benefits() {
           <Image src={Banner} alt="Banner" width={340} height={450} />
         </div>
       </div>
-      <div className="md:w-[28%] flex justify-between flex-col mt-[2%] text-justify">
+      <div className="md:w-[28%] flex justify-between flex-col mt-[2%] text-justify gap-6 md:gap-0">
         <div className="flex justify-center text-center">
           <Button
             link="https://api.whatsapp.com/send?phone=5548999040036"
@@ -93,7 +93,7 @@ export default function Benefits() {
             todos os aspectos da construção metálica.
           </p>
         </div>
-        <div className="flex justify-center text-center">
+        <div className="flex justify-center text-center mt-6 md:mt-0">
           <Button link="/sobre" text="Saber mais agora!" />
         </div>
       </div>

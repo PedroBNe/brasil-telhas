@@ -6,10 +6,10 @@ import Button from "../Button";
 
 export default function Welcome() {
   return (
-    <div className="flex flex-col lg:flex-row justify-between">
-      <div className="w-full lg:w-[45%] flex flex-col gap-10">
+    <div className="flex flex-col md:flex-row justify-between">
+      <div className="w-full md:w-[45%] flex flex-col gap-10">
         <div className=" font-bold text-5xl text-title">
-          <div className="flex">
+          <div className="flex items-center">
             <Link
               href="https://www.instagram.com/brasil.telhas/"
               className="pr-4"
@@ -28,9 +28,9 @@ export default function Welcome() {
                 ></path>
               </svg>
             </Link>
-            <h1>Bem-vindo à Brasil</h1>
+            <h1 className="text-2xl md:text-5xl">Bem-vindo à Brasil</h1>
           </div>
-          <div className="flex">
+          <div className="flex items-center">
             <Link
               href="https://www.facebook.com/BrasilTelhasMetalicas01"
               className="pr-4"
@@ -48,7 +48,7 @@ export default function Welcome() {
                 />
               </svg>
             </Link>
-            <h1>Telhas Metálicas</h1>
+            <h1 className="text-2xl md:text-5xl">Telhas Metálicas</h1>
           </div>
         </div>
         <div>
@@ -76,13 +76,15 @@ export default function Welcome() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-[45%]">
-        <Image src={Logo} alt="Logo" width={475} height={300} />
-        <div className="pt-16 flex gap-4">
-          <div>
+      <div className="w-full md:w-[45%] flex flex-col items-center">
+        <div className="w-[200px] md:w-[300px] lg:w-[475px] mt-8 md:mt-0">
+          <Image src={Logo} alt="Logo" className="w-full h-auto" />
+        </div>
+        <div className="pt-10 md:pt-16 flex justify-around md:justify-normal md:gap-4">
+          <div className="w-[45%]">
             <Button link="/sobre" text="Conhecer mais agora!" />
           </div>
-          <div>
+          <div className="w-[45%]">
             <Button
               link="https://api.whatsapp.com/send?phone=5548999040036"
               text="Falar com consultor"

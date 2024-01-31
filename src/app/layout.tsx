@@ -30,7 +30,7 @@ export default function RootLayout({
         <div className="relative bg-img_maquina_telhas w-full h-full bg-cover bg-center">
           <div className="absolute inset-0 bg-img_maquina_telhas bg-cover bg-center brightness-25"></div>
           <Header />
-          <div className="relative h-[425px] lg:h-[700px]  flex items-center">
+          <div className="relative h-[350px] lg:h-[700px]  flex items-center">
             <Banner />
           </div>
         </div>

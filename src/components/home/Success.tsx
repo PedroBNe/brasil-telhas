@@ -50,7 +50,7 @@ export default function Success() {
     <div id="portfolio">
       <div>
         <p className="text-title">Conheça alguns dos nossos</p>
-        <h1>Cases de Sucesso</h1>
+        <h1 className="text-3xl md:text-5xl">Cases de Sucesso</h1>
       </div>
       <div className="carousel">
         <button className="prev-button" onClick={goToPrevSlide}>

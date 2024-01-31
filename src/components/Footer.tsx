@@ -21,10 +21,12 @@ import Button from "./Button";
 export default function Footer() {
   return (
     <footer>
-      <div className="flex flex-col md:flex-row my-20">
+      <div className="flex flex-col md:flex-row my-10 md:my-20">
         <div className="md:w-[40%]">
           <div className="mb-[50px]">
-            <h1 className="text-title font-bold text-5xl">Entre em contato</h1>
+            <h1 className="text-title font-bold text-3xl md:text-5xl">
+              Entre em contato
+            </h1>
             <p className="text-title font-normal text-sm">
               Faça como nossos clientes e garanta qualidade na sua obra.
             </p>

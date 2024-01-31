@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Banner() {
   return (
-    <div className="pl-[6%] text-white max-w-6xl static">
+    <div className="mt-12 md:mt-0 pl-[6%] text-white max-w-6xl static">
       <div className=" font-bold text-5xl leading-[3.5rem] mb-[2%]">
         <h1 className="text-white">
           CONSTRUINDO EXCELÊNCIA EM COBERTURAS METÁLICAS
