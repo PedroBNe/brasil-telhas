@@ -30,8 +30,8 @@ export default function Expansion() {
           </p>
         </div>
       </div>
-      <div className="flex justify-between mb-14">
-        <div className="w-[45%] flex flex-col gap-4 text-justify">
+      <div className="flex flex-col md:flex-row justify-between mb-14">
+        <div className="md:w-[45%] flex flex-col gap-4 text-justify">
           <h2>Isso significa para você:</h2>
           <div>
             <p className="font-bold">Agilidade e Eficiência</p>
@@ -67,7 +67,7 @@ export default function Expansion() {
             </p>
           </div>
         </div>
-        <div className="w-[50%]">
+        <div className="md:w-[50%]">
           <Image src={LogoSigni} alt="Logo significado" />
         </div>
       </div>
@@ -89,15 +89,15 @@ export default function Expansion() {
             <p>A Brasil Telhas Metálicas: Sempre Inovando, Sempre Avançando!</p>
           </div>
         </div>
-        <div className="flex justify-between">
-          <div className="text-title w-[45%]">
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className="text-title md:w-[45%]">
             <p>Quer saber mais?</p>
             <p className="font-bold text-justify">
               Continue navegando em nossa página ou entre em contato com um de
               nossos consultores!
             </p>
           </div>
-          <div className="w-[42%] flex gap-8">
+          <div className="md:w-[42%] flex gap-8">
             <div className="w-[250px]">
               <Button link="/sobre" text="Conhecer mais agora!" />
             </div>
@@ -111,8 +111,8 @@ export default function Expansion() {
         </div>
       </div>
       <div>
-        <div className="flex justify-between mb-6">
-          <div className="w-[45%] flex flex-col justify-between">
+        <div className="flex flex-col md:flex-row justify-between mb-6">
+          <div className="md:w-[45%] flex flex-col justify-between">
             <div className=" flex flex-col gap-3 text-justify">
               <h2>Nossa missão</h2>
               <p>
@@ -135,7 +135,7 @@ export default function Expansion() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-3 w-[48%] text-justify">
+          <div className="flex flex-col gap-3 md:w-[48%] text-justify">
             <h2>Valores</h2>
             <div className="flex flex-col gap-3">
               <p>

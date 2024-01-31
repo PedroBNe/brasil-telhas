@@ -7,8 +7,8 @@ import Button from "../Button";
 export default function WhoWeAre() {
   return (
     <div className="flex flex-col justify-between">
-      <div className="flex justify-between mb-6">
-        <div className="w-[50%] gap-10">
+      <div className="flex flex-col md:flex-row justify-between mb-6">
+        <div className="md:w-[50%] gap-10">
           <div className=" font-bold text-5xl text-title mb-8">
             <div className="flex">
               <h1>Quem somos?</h1>
@@ -44,7 +44,7 @@ export default function WhoWeAre() {
             </div>
           </div>
         </div>
-        <div className=" w-[45%]">
+        <div className="md:w-[45%]">
           <Image src={Logo} alt="Logo" width={475} height={300} />
         </div>
       </div>
@@ -74,7 +74,7 @@ export default function WhoWeAre() {
         </p>
       </div>
 
-      <div className="flex justify-between w-[100%] mt-8">
+      <div className="flex flex-col md:flex-row justify-between w-[100%] mt-8">
         <div className="text-title text-sm flex flex-col gap-2">
           <p className="font-normal">Quer saber mais?</p>
           <p className="font-bold">
