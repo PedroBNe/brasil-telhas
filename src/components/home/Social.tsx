@@ -44,13 +44,13 @@ export default function Social() {
       </div>
       <div className="md:w-[30%] flex justify-between items-center gap-4 text-sm font-bold text-title">
         <Link
-          className="min-w-[40%] md:min-w-[50%] bg-white rounded-md p-3 whitespace-nowrap flex justify-center"
+          className="min-w-[45%] md:min-w-[50%] bg-white rounded-md p-3 whitespace-nowrap flex justify-center"
           href="/sobre"
         >
           Saber mais
         </Link>
         <Link
-          className="min-w-[40%] md:min-w-[50%] bg-white rounded-md p-3 whitespace-nowrap flex justify-center"
+          className="min-w-[45%] md:min-w-[50%] bg-white rounded-md p-3 whitespace-nowrap flex justify-center"
           href="https://api.whatsapp.com/send?phone=5548999040036"
         >
           Falar com consultor

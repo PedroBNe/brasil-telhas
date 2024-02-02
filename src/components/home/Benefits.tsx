@@ -8,7 +8,7 @@ export default function Benefits() {
   return (
     <div id="vantagens" className="flex justify-between flex-col md:flex-row">
       <div className="md:w-[28%] flex justify-between flex-col">
-        <div>
+        <div className="flex justify-center md:justify-start">
           <Image src={Logo} alt="Logo" />
         </div>
         <div className="text-title my-[8%]">

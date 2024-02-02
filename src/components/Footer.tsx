@@ -134,58 +134,64 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row gap-4 md:gap-0">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-0 items-center md:items-start">
         <div className="md:w-[25%]">
           <Image src={LogoFooter} alt="Logo" width={160} height={100} />
         </div>
         <div className="md:w-[25%]">
           <ul className="text-sm font-normal">
-            <p className="text-title font-bold">Links</p>
-            <li>
+            <p className="text-title font-bold flex justify-center md:justify-normal">
+              Links
+            </p>
+            <li className="flex justify-center md:justify-normal">
               <Link href="/produtos">Navegar no catálogo</Link>
             </li>
-            <li>
+            <li className="flex justify-center md:justify-normal">
               <Link href="/sobre">Conhecer empresa</Link>
             </li>
-            <li>
+            <li className="flex justify-center md:justify-normal">
               <Link href="/trabalhe">Trabalhar na Brasil Telhas</Link>
             </li>
-            <li>
+            <li className="flex justify-center md:justify-normal">
               <Link href="/contato">Opções de contato</Link>
             </li>
           </ul>
         </div>
         <div className="md:w-[25%]">
           <ul className="text-sm font-normal">
-            <p className="text-title font-bold">Políticas</p>
-            <li>
+            <p className="text-title font-bold flex justify-center md:justify-normal">
+              Políticas
+            </p>
+            <li className="flex justify-center md:justify-normal">
               <Link href="/">Política de privacidade de dados</Link>
             </li>
-            <li>
+            <li className="flex justify-center md:justify-normal">
               <Link href="/">Política de uso de cookies</Link>
             </li>
-            <li>
+            <li className="flex justify-center md:justify-normal">
               <Link href="/">Política de marketing</Link>
             </li>
-            <li>
+            <li className="flex justify-center md:justify-normal">
               <Link href="/">Termos de uso de informações</Link>
             </li>
           </ul>
         </div>
         <div className="md:w-[25%]">
           <ul className="text-sm font-normal">
-            <p className="text-title font-bold">Redes Sociais</p>
-            <li>
+            <p className="text-title font-bold flex justify-center md:justify-normal">
+              Redes Sociais
+            </p>
+            <li className="flex justify-center md:justify-normal">
               <Link href="https://www.instagram.com/brasil.telhas/">
                 Nos siga no Instagram
               </Link>
             </li>
-            <li>
+            <li className="flex justify-center md:justify-normal">
               <Link href="https://www.facebook.com/BrasilTelhasMetalicas01">
                 Acompanhe nossa página no Facebook
               </Link>
             </li>
-            <li>
+            <li className="flex justify-center md:justify-normal">
               <Link href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LKoyzzMyMzEzYLRSNaiwNDUyMk6xSDRNNbEwskw2twIKWaSYJJuYJVqmJhskJadZeEkkFSUWZ-YolKTmZCQWK-SmlhxemJOZnFgMAH-AGOo&q=brasil+telhas+met%C3%A1licas&rlz=1C1FKPE_pt-PTBR1080BR1080&oq=bra&gs_lcrp=EgZjaHJvbWUqFQgBEC4YJxivARjHARiABBiKBRiOBTIGCAAQRRg8MhUIARAuGCcYrwEYxwEYgAQYigUYjgUyBggCEEUYOTITCAMQLhiDARjHARixAxjRAxiABDIGCAQQRRg9MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTczNWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#ip=1&lrd=0x95223d8a5e4829c7:0x98d4c46a9ec0bcf8,1,,,,">
                 Nos avalie no Google+
               </Link>

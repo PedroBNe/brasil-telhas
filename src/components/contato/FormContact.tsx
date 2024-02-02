@@ -99,7 +99,7 @@ export function FormContact() {
               <textarea
                 name="mensagem"
                 placeholder="Sua mensagem aqui:"
-                className="w-[580PX] h-[220px] bg-input rounded p-4"
+                className="w-[580PX] h-full bg-input rounded p-4"
                 value={formData.mensagem}
                 onChange={handleChange}
               />
