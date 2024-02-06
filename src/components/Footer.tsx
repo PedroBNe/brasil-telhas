@@ -163,16 +163,13 @@ export default function Footer() {
               Políticas
             </p>
             <li className="flex justify-center md:justify-normal">
-              <Link href="/">Política de privacidade de dados</Link>
+              <Link href="/privacidade">Política de privacidade de dados</Link>
             </li>
             <li className="flex justify-center md:justify-normal">
-              <Link href="/">Política de uso de cookies</Link>
+              <Link href="/cookies">Política de uso de cookies</Link>
             </li>
             <li className="flex justify-center md:justify-normal">
-              <Link href="/">Política de marketing</Link>
-            </li>
-            <li className="flex justify-center md:justify-normal">
-              <Link href="/">Termos de uso de informações</Link>
+              <Link href="/marketing">Política de marketing</Link>
             </li>
           </ul>
         </div>
