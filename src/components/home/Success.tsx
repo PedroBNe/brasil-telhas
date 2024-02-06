@@ -68,7 +68,12 @@ export default function Success() {
                 </button>
                 <div className="flex flex-col md:flex-row">
                   {item.images.map((image) => (
-                    <Image key={image.alt} src={image.src} alt={image.alt} />
+                    <Image
+                      className="max-h-96 md:max-h-none"
+                      key={image.alt}
+                      src={image.src}
+                      alt={image.alt}
+                    />
                   ))}
                 </div>
                 <button className="next-button" onClick={goToNextSlide}>
