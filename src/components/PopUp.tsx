@@ -45,7 +45,7 @@ export default function PopUp() {
 
   return (
     <div className="w-full h-full fixed top-0 popup z-50">
-      <div className="max-w-[500px] my-[1.75rem] mx-auto relative bg-white">
+      <div className="max-w-[500px] my-[1.75rem] mx-auto relative bg-white rounded">
         <div className="p-3 flex justify-end opacity-70 cursor-pointer">
           <button>
             <Image src={close} alt="close" width={20} height={20} />
