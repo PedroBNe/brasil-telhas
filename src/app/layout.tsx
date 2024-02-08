@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cookie, Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Banner from "@/components/Banner";

@@ -87,7 +87,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -283,4 +282,12 @@ img {
   .list-questions li {
     width: 100%;
   }
+}
+
+.popup {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.popup > div {
+  margin: 1.75rem auto;
 }
