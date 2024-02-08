@@ -80,7 +80,7 @@ export default function Testimony() {
               }
             >
               {item.testimony.map((testion) => (
-                <div key={testion.title} className="lg:w-[28%] mt-[2%]">
+                <div key={testion.title} className="lg:w-[28%] mt-[8%]">
                   <p className="flex">
                     {Array.from({ length: testion.quality }).map((_, index) => (
                       <Image

@@ -40,7 +40,7 @@ export default function PopUp() {
   };
 
   return (
-    <div>
+    <div className="max-w-[500px] my-[1.75rem] mx-auto relative">
       <div>
         <Image src={popup} alt="Imagem popup" />
       </div>

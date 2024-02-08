@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Cookie, Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
+import Whatsap from "@/components/Whatsap";
+import CookiesPopUp from "@/components/Cookies";
+import PopUp from "@/components/PopUp";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -36,8 +39,11 @@ export default function RootLayout({
         </div>
         <div className="px-[6%]">
           {children}
+          <Whatsap />
           <Footer />
         </div>
+        <PopUp />
+        <CookiesPopUp />
       </body>
     </html>
   );
