@@ -86,7 +86,54 @@ export default function PopUp() {
     <>
       {popUp && (
         <div className="w-full h-full fixed top-0 popup z-50">
-          {/* Restante do componente */}
+          <div className="max-w-[500px] my-[1.75rem] mx-auto relative bg-white rounded">
+            <div className="p-3 flex justify-end opacity-70 cursor-pointer">
+              <button onClick={handleClose}>
+                <Image src={close} alt="close" width={20} height={20} />
+              </button>
+            </div>
+            <div className="flex justify-center">
+              <Image src={popup} alt="Imagem popup" width={120} />
+            </div>
+            <div className="flex justify-center items-center gap-2 flex-col mb-4">
+              <h3 className="flex justify-center text-xl font-bold">
+                Olá, tudo bem ?
+              </h3>
+              <p className="flex justify-center text-center w-[90%] opacity-80">
+                Nossa equipe deseja apresentar a Brasil Telhas para você, deixe
+                seu telefone abaixo e entraremos em contato!
+              </p>
+            </div>
+            <form
+              onSubmit={handleSubmit}
+              className="flex items-center flex-col gap-6"
+            >
+              <input
+                type="text"
+                name="nomeCompleto"
+                placeholder="Seu Nome"
+                className="bg-input w-[90%] h-[50px] rounded pl-4"
+                value={formData.nomeCompleto}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="tel"
+                name="telefone"
+                placeholder="Telefone"
+                className="bg-input w-[90%] h-[50px] rounded pl-4"
+                value={formData.telefone}
+                onChange={handleChange}
+                required
+              />
+              <button
+                type="submit"
+                className="w-[90%] bg-button py-2 rounded mb-4 text-white text-base font-semibold"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
         </div>
       )}
     </>
