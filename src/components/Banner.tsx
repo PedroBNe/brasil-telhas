@@ -1,11 +1,28 @@
+"use client";
+
 import Image from "next/image";
 import MenuRight from "@/assets/menu-right.svg";
 import Button from "./Button";
 
 import SimbolImage from "@/assets/BRASIL TELHAS 1.png";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 export default function Banner() {
+  const router = useRouter();
+  const [showBanner, setShowBanner] = useState(false);
+
+  useEffect(() => {
+    // A verificação é adiada até a montagem do componente,
+    // garantindo que o router esteja disponível.
+    setShowBanner(router.pathname !== "/sobre");
+  }, [router.pathname]);
+
+  if (!showBanner) {
+    return null;
+  }
+
   return (
     <div className="mt-12 md:mt-0 pl-[6%] text-white max-w-6xl static">
       <div className=" font-bold text-5xl leading-[3.5rem] mb-[2%]">
