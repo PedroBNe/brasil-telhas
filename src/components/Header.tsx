@@ -41,12 +41,20 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 w-full h-20 flex justify-between items-center z-30 transition duration-300 ${
-        isAtTop ? "bg-transparent" : "bg-white"
+        isAtTop &&
+        pathname != "/marketing" &&
+        pathname != "/cookies" &&
+        pathname != "/privacidade"
+          ? "bg-transparent"
+          : "bg-white"
       }`}
     >
       <div className="w-[50%] pl-[6%]">
         <Link href="/">
-          {isAtTop ? (
+          {isAtTop &&
+          pathname != "/marketing" &&
+          pathname != "/cookies" &&
+          pathname != "/privacidade" ? (
             <Image src={Logo} alt="Logo" width={65} height={45} />
           ) : (
             <Image src={LogoPrincipal} alt="Logo" width={65} height={45} />
@@ -59,7 +67,10 @@ const Header = () => {
             onClick={() => setOpen((ev) => !ev)}
             className="flex justify-end"
           >
-            {isAtTop ? (
+            {isAtTop &&
+            pathname != "/marketing" &&
+            pathname != "/cookies" &&
+            pathname != "/privacidade" ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -110,7 +121,12 @@ const Header = () => {
         </div>
         <nav
           className={`gap-[4%] font-semibold hidden md:flex ${
-            isAtTop ? "text-white" : "text-title"
+            isAtTop &&
+            pathname != "/marketing" &&
+            pathname != "/cookies" &&
+            pathname != "/privacidade"
+              ? "text-white"
+              : "text-title"
           } text-sm`}
         >
           <Link className={`${linkStyle}`} href="/sobre">

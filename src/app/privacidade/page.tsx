@@ -1,8 +1,8 @@
 export default function Privacidade() {
   return (
-    <div>
-      <h1>Política de Privacidade de Dados</h1>
-      <div className="flex flex-col">
+    <div className="mt-24">
+      <h1 className="mb-4">Política de Privacidade de Dados</h1>
+      <div className="flex flex-col gap-6">
         <p>
           A sua privacidade é importante para nós. É política da Brasil Telhas
           Metálicas respeitar a sua privacidade em relação a qualquer informação
