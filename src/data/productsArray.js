@@ -12,7 +12,6 @@ export const productsArray = [
     title: "Telha Sanduíche1",
     type: "Telhas Metálicas",
     btn: "VER PRODUTO",
-    falsed: false,
     description: `A BRASIL TELHAS TERMOACÚSTICAS possuem maior eficiência TÉRMICA e
       ACÚSTICA para você. Podendo ser na cor natural da chapa (aluzinco)
       ou com pintura PRÉ ou PÓS PINTADA. Outra grande vantagem da BRASIL
@@ -50,7 +49,6 @@ export const productsArray = [
     title: "Telha Sanduíche2",
     type: "Telhas Metálicas",
     btn: "VER PRODUTO",
-    falsed: false,
     description: `A BRASIL TELHAS TERMOACÚSTICAS possuem maior eficiência TÉRMICA e
       ACÚSTICA para você. Podendo ser na cor natural da chapa (aluzinco)
       ou com pintura PRÉ ou PÓS PINTADA. Outra grande vantagem da BRASIL
@@ -88,7 +86,6 @@ export const productsArray = [
     title: "Telha Sanduíche3",
     type: "Telhas Metálicas",
     btn: "VER PRODUTO",
-    falsed: false,
     description: `A BRASIL TELHAS TERMOACÚSTICAS possuem maior eficiência TÉRMICA e
       ACÚSTICA para você. Podendo ser na cor natural da chapa (aluzinco)
       ou com pintura PRÉ ou PÓS PINTADA. Outra grande vantagem da BRASIL
@@ -126,7 +123,6 @@ export const productsArray = [
     title: "Telha Sanduíche4",
     type: "Telhas Metálicas",
     btn: "VER PRODUTO",
-    falsed: false,
     description: `A BRASIL TELHAS TERMOACÚSTICAS possuem maior eficiência TÉRMICA e
       ACÚSTICA para você. Podendo ser na cor natural da chapa (aluzinco)
       ou com pintura PRÉ ou PÓS PINTADA. Outra grande vantagem da BRASIL
@@ -164,7 +160,6 @@ export const productsArray = [
     title: "Telha Sanduíche5",
     type: "Telhas Metálicas",
     btn: "VER PRODUTO",
-    falsed: false,
     description: `A BRASIL TELHAS TERMOACÚSTICAS possuem maior eficiência TÉRMICA e
       ACÚSTICA para você. Podendo ser na cor natural da chapa (aluzinco)
       ou com pintura PRÉ ou PÓS PINTADA. Outra grande vantagem da BRASIL
@@ -202,7 +197,6 @@ export const productsArray = [
     title: "Telha Sanduíche6",
     type: "Telhas Metálicas",
     btn: "VER PRODUTO",
-    falsed: false,
     description: `A BRASIL TELHAS TERMOACÚSTICAS possuem maior eficiência TÉRMICA e
       ACÚSTICA para você. Podendo ser na cor natural da chapa (aluzinco)
       ou com pintura PRÉ ou PÓS PINTADA. Outra grande vantagem da BRASIL
@@ -240,7 +234,6 @@ export const productsArray = [
     title: "Telha Sanduíche7",
     type: "Telhas Metálicas",
     btn: "VER PRODUTO",
-    falsed: false,
     description: `A BRASIL TELHAS TERMOACÚSTICAS possuem maior eficiência TÉRMICA e
       ACÚSTICA para você. Podendo ser na cor natural da chapa (aluzinco)
       ou com pintura PRÉ ou PÓS PINTADA. Outra grande vantagem da BRASIL
@@ -278,7 +271,6 @@ export const productsArray = [
     title: "Telha Sanduíche8",
     type: "Telhas Metálicas",
     btn: "VER PRODUTO",
-    falsed: false,
     description: `A BRASIL TELHAS TERMOACÚSTICAS possuem maior eficiência TÉRMICA e
       ACÚSTICA para você. Podendo ser na cor natural da chapa (aluzinco)
       ou com pintura PRÉ ou PÓS PINTADA. Outra grande vantagem da BRASIL
@@ -316,7 +308,6 @@ export const productsArray = [
     title: "Telha Sanduíche9",
     type: "Telhas Metálicas",
     btn: "VER PRODUTO",
-    falsed: false,
     description: `A BRASIL TELHAS TERMOACÚSTICAS possuem maior eficiência TÉRMICA e
       ACÚSTICA para você. Podendo ser na cor natural da chapa (aluzinco)
       ou com pintura PRÉ ou PÓS PINTADA. Outra grande vantagem da BRASIL

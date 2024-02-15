@@ -16,7 +16,6 @@ export default function Products() {
             title={product.title}
             text={product.type}
             classe="flex justify-center absolute top-[-10px] w-[130%]"
-            margintop={product.falsed}
             link={product.id}
           />
         ))}

@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 import Logo from "@/assets/Home/welcome.png";
 import Button from "../Button";
@@ -7,7 +10,13 @@ import Button from "../Button";
 export default function Welcome() {
   return (
     <div className="flex flex-col md:flex-row justify-between">
-      <div className="w-full md:w-[45%] flex flex-col gap-10">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -100 }}
+        transition={{ duration: 0.5 }}
+        className="w-full md:w-[45%] flex flex-col gap-10"
+      >
         <div className=" font-bold text-5xl text-title">
           <div className="flex items-center">
             <Link
@@ -79,8 +88,14 @@ export default function Welcome() {
             </p>
           </div>
         </div>
-      </div>
-      <div className="w-full md:w-[45%] flex flex-col items-center">
+      </motion.div>
+      <motion.div
+        className="w-full md:w-[45%] flex flex-col items-center"
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="w-[200px] md:w-[300px] lg:w-[475px] mt-8 md:mt-0">
           <Image src={Logo} alt="Logo" className="w-full h-auto" />
         </div>
@@ -95,7 +110,7 @@ export default function Welcome() {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

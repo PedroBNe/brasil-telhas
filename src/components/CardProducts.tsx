@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,13 +26,13 @@ const CardProducts: React.FC<CardProductsProps> = ({
   return (
     <div className="cardProduct w-full md:w-[32%] lg:w-[25%] bg-product hover:bg-product-select flex flex-col items-center p-6 relative shadow-2xl transition transform hover:scale-110">
       <div className={classe}>
-        <Image
-          className="transition transform hover:scale-110"
-          src={img}
-          alt="Produto"
-          width={350}
-          height={100}
-        />
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.6 }}
+          transition={{ type: "spring", stiffness: 400, damping: 17 }}
+        >
+          <Image src={img} alt="Produto" width={350} height={100} />
+        </motion.div>
       </div>
       <div
         className={`font-bold text-xl text-white ${
