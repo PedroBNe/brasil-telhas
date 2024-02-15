@@ -189,7 +189,6 @@ p {
 .slide-testion {
   display: flex;
   justify-content: space-evenly;
-  gap: 5%;
 }
 
 .prev-testimony {

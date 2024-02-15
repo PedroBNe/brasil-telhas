@@ -62,7 +62,7 @@ export default function Testimony() {
   return (
     <div className=" relative">
       <div className="absolute top-6">
-        <h1>Depoimentos</h1>
+        <h1 className="mb-2">Depoimentos</h1>
         <p className="text-title">De quem comprovou nossa qualidade!</p>
       </div>
       <div className="testimony h-[850px] md:h-[460px]">
@@ -75,12 +75,12 @@ export default function Testimony() {
               key={item.id}
               className={
                 index === activeIndex
-                  ? "slide-testion slide active flex-col md:flex-row mt-20 md:mt-0"
-                  : "slide-testion slide"
+                  ? "slide-testion slide h-full active flex-col md:flex-row mt-20 md:mt-0"
+                  : "slide-testion slide h-full"
               }
             >
               {item.testimony.map((testion) => (
-                <div key={testion.title} className="lg:w-[28%] mt-[8%]">
+                <div key={testion.title} className="lg:w-[28%] mt-[4%]">
                   <p className="flex">
                     {Array.from({ length: testion.quality }).map((_, index) => (
                       <Image
@@ -99,7 +99,7 @@ export default function Testimony() {
                   <p className="text-justify font-medium">{testion.text}</p>
                 </div>
               ))}
-              <div className="flex flex-col lg:flex-row gap-[2%]">
+              <div className="flex flex-col h-full lg:flex-row gap-[2%]">
                 {item.images.map((image) => (
                   <Image
                     key={image.alt}

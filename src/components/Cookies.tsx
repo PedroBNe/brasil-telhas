@@ -21,15 +21,21 @@ export default function CookiesPopUp() {
   if (!showPopup) return null;
 
   return (
-    <div className="fixed bottom-0 bg-white w-full flex justify-center z-20">
+    <div className="fixed bottom-0 bg-white w-full flex justify-center z-40">
       <div className="flex text-base justify-center w-[85%] py-4 gap-4">
-        <b className="font-bold flex items-center">Hm... Cookies!</b>
-        <p className="text-base flex items-center">
-          🍪 Usamos cookies para garantir que você tenha a melhor experiência em
-          nosso site.
-          <Link href="/politica-de-privacidade">
-            <span className="flex items-center font-bold pl-1">Saiba Mais</span>
-          </Link>
+        <p className="md:flex">
+          <b className="text-[11px] font-bold flex items-center md:text-base">
+            Hm... Cookies!
+          </b>
+          <p className="text-[11px] md:flex md:text-base items-center">
+            🍪 Usamos cookies para garantir que você tenha a melhor experiência
+            em nosso site.
+            <Link href="/politica-de-privacidade">
+              <span className="flex text-[11px] md:text-base items-center font-bold pl-1">
+                Saiba Mais
+              </span>
+            </Link>
+          </p>
         </p>
         <button
           onClick={handleAcceptCookies}

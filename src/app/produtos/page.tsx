@@ -1,5 +1,4 @@
 import Conheca from "@/components/Conheca";
-import Benefits from "@/components/home/Benefits";
 import Social from "@/components/home/Social";
 import Success from "@/components/home/Success";
 import Testimony from "@/components/home/Testimony";

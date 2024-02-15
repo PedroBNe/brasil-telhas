@@ -15,6 +15,8 @@ export default function PopUp() {
     telefone: "",
   });
 
+  const [isReady, setIsReady] = useState(false);
+
   useEffect(() => {
     const popUpData = localStorage.getItem("popUpData");
     if (popUpData) {
@@ -24,8 +26,12 @@ export default function PopUp() {
         setPopUp(show);
       }
     }
-    // Isso garante que a verificação só ocorra no lado do cliente
-  }, []); // Dependências vazias indicam que o efeito roda uma vez após o componente montar
+    setIsReady(true); // Atualiza o estado para indicar que a verificação está completa
+  }, []);
+
+  if (!isReady) {
+    return null; // Ou renderize um carregamento, se preferir
+  }
 
   const handleChange = (e: any) => {
     const { name, value } = e.target;
