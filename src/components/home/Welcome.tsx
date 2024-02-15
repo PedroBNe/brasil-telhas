@@ -28,7 +28,9 @@ export default function Welcome() {
                 ></path>
               </svg>
             </Link>
-            <h1 className="text-2xl md:text-5xl">Bem-vindo à Brasil</h1>
+            <h1 className="text-2xl lg:text-3xl xl:text-5xl">
+              Bem-vindo à Brasil
+            </h1>
           </div>
           <div className="flex items-center">
             <Link
@@ -48,7 +50,9 @@ export default function Welcome() {
                 />
               </svg>
             </Link>
-            <h1 className="text-2xl md:text-5xl">Telhas Metálicas</h1>
+            <h1 className="text-2xl lg:text-3xl xl:text-5xl">
+              Telhas Metálicas
+            </h1>
           </div>
         </div>
         <div>

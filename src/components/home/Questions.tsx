@@ -12,7 +12,7 @@ export default function Question() {
   const [activeList, setActiveList] = useState<number | null>(null);
 
   return (
-    <div className="flex flex-col gap-9 h-[450px] md:max-w-[75%] select-none relative">
+    <div className="flex flex-col gap-9 md:max-w-[75%] select-none relative">
       <div>
         <h1 className="mb-2">Não queremos deixá-lo com dúvidas!</h1>
         <p className="text-title">

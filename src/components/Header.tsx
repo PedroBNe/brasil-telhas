@@ -127,7 +127,7 @@ const Header = () => {
             pathname != "/privacidade"
               ? "text-white"
               : "text-title"
-          } text-sm`}
+          } text-xs lg:text-sm`}
         >
           <Link className={`${linkStyle}`} href="/sobre">
             Sobre Nós

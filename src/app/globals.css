@@ -277,16 +277,28 @@ img {
   border-top: 1px solid gray;
 }
 
-@media (max-width: 768px) {
-  .list-questions li {
-    width: 100%;
-  }
-}
-
 .popup {
   background: rgba(0, 0, 0, 0.5);
 }
 
 .popup > div {
   margin: 1.75rem auto;
+}
+
+@media (max-width: 768px) {
+  .list-questions li {
+    width: 100%;
+  }
+
+  .item-ava {
+    min-width: 300px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 370px) {
+  .item-ava {
+    min-width: 250px;
+    width: 250px;
+  }
 }
