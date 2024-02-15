@@ -48,8 +48,8 @@ export default function TalentsForm() {
   };
 
   return (
-    <div className="flex justify-between mt-24">
-      <div className="w-[50%]">
+    <div className="flex justify-between mt-24 flex-col md:flex-row">
+      <div className="w-full md:w-[50%]">
         <h1 className="mb-3">Banco de Talentos</h1>
         <h2 className="mb-8">Não encontrou nada para você?</h2>
         <p className="mb-4">
@@ -59,7 +59,7 @@ export default function TalentsForm() {
         </p>
         <p>Preencha os campos abaixo e anexe seu currículo.</p>
       </div>
-      <div className="w-[45%]">
+      <div className="md:w-[45%] mt-4 md:mt-0">
         <form onSubmit={handleSubmit}>
           <div className="flex justify-between mb-6">
             <div className="flex flex-col w-full gap-8">
@@ -82,12 +82,12 @@ export default function TalentsForm() {
                 onChange={handleChange}
                 required
               />
-              <div className="flex justify-between">
+              <div className="flex justify-between flex-col md:flex-row gap-8 md:gap-0">
                 <input
                   type="number"
                   name="idade"
                   placeholder="Idade:"
-                  className="bg-input w-[45%] h-[50px] rounded pl-4"
+                  className="bg-input md:w-[45%] h-[50px] rounded pl-4"
                   value={formData.idade}
                   onChange={handleChange}
                   required
@@ -96,7 +96,7 @@ export default function TalentsForm() {
                   type="tel"
                   name="telefone"
                   placeholder="Telefone:"
-                  className="bg-input w-[50%] h-[50px] rounded pl-4"
+                  className="bg-input md:w-[50%] h-[50px] rounded pl-4"
                   value={formData.telefone}
                   onChange={handleChange}
                   required

@@ -129,11 +129,11 @@ export default function CardWork({
             ) : null}
           </div>
         </div>
-        <div className="w-full text-justify my-4">
+        <div className="w-full text-justify my-4 lg:my-0 xl:my-4">
           <p className="text-[10px]">{analise}</p>
         </div>
         <div>
-          <div className="bg-white rounded w-[218px] h-[50px] flex items-center justify-center">
+          <div className="bg-white rounded w-[150px] xl:w-[218px] h-[50px] flex items-center justify-center">
             <Link
               href=""
               className="w-full h-full flex justify-center items-center"

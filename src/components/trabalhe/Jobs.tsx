@@ -49,9 +49,12 @@ export default function Jobs() {
         <h1 className="mb-2">Oportunidades de Emprego</h1>
         <h2>Faça parte da nossa equipe!</h2>
       </div>
-      <div className="flex justify-evenly mt-10">
+      <div className="flex justify-evenly mt-10 flex-col md:flex-row md:gap-0">
         {Jobs.map((job) => (
-          <div key={job.title} className="w-[310px] h-[465px]">
+          <div
+            key={job.title}
+            className="md:w-[210px] xl:w-[310px] h-[465px] mb-4"
+          >
             <CardWork
               title={job.title}
               description={job.description}

@@ -11,8 +11,8 @@ export default function BenefitsWork() {
       <div className="mb-8">
         <h1>Benefícios</h1>
       </div>
-      <div className="flex justify-between">
-        <div className="w-[20%] flex flex-col items-center text-center">
+      <div className="flex justify-between flex-col md:flex-row gap-6 md:gap-0">
+        <div className="md:w-[20%] flex flex-col items-center text-center">
           <Image src={Life} alt="Coração" width={40} height={40} />
           <h2 className="text-black">Plano de Saúde</h2>
           <p>
@@ -21,7 +21,7 @@ export default function BenefitsWork() {
             famílias.
           </p>
         </div>
-        <div className="w-[20%] flex flex-col items-center text-center">
+        <div className="md:w-[20%] flex flex-col items-center text-center">
           <Image src={Award} alt="Recompensa" width={40} height={40} />
           <h2 className="text-black">
             Programas de Reconhecimento e Recompensas
@@ -31,7 +31,7 @@ export default function BenefitsWork() {
             excepcional dos funcionários pode motivar e engajar a equipe.
           </p>
         </div>
-        <div className="w-[20%] flex flex-col items-center text-center">
+        <div className="md:w-[20%] flex flex-col items-center text-center">
           <Image src={Time} alt="Coração" width={40} height={40} />
           <h2 className="text-black">
             Dias de Folga Adicionais ou Banco de Horas
@@ -42,7 +42,7 @@ export default function BenefitsWork() {
             tempo.
           </p>
         </div>
-        <div className="w-[20%] flex flex-col items-center text-center">
+        <div className="md:w-[20%] flex flex-col items-center text-center">
           <Image src={Desenvolved} alt="Coração" width={40} height={40} />
           <h2 className="text-black">Desenvolvimento Profissional</h2>
           <p>

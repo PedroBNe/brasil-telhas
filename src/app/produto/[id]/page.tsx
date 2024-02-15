@@ -19,9 +19,9 @@ export default function ProductDetails({ params }: PageDetailProps) {
   return (
     <div>
       <Conheca />
-      <div>
-        <div className="flex justify-between mb-10">
-          <div className="w-[55%] flex flex-col justify-between">
+      <div className="mb-6 md:mb-0">
+        <div className="flex justify-between mb-10 flex-col md:flex-row ">
+          <div className="md:w-[55%] flex flex-col justify-between">
             {product?.primaryImage ? (
               <Image
                 src={product.primaryImage}
@@ -39,7 +39,7 @@ export default function ProductDetails({ params }: PageDetailProps) {
               />
             ) : null}
           </div>
-          <div className="w-[45%]">
+          <div className="md:w-[45%]">
             <h1 className="mb-4">{product?.title}</h1>
             <p className="mb-2">{product?.description}</p>
             <p className="mb-4">{product?.description2}</p>
@@ -61,12 +61,12 @@ export default function ProductDetails({ params }: PageDetailProps) {
             <p>{product?.ficha}</p>
           </div>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-col md:flex-row gap-4 md:gap-0">
           {product?.Images.map((image, index) => (
             <Image key={index} src={image} alt="Imagem" />
           ))}
         </div>
-        <div className="flex justify-between mt-16">
+        <div className="flex justify-between mt-16 flex-col xl:flex-col gap-4 xl:gap-0">
           <div className="text-title">
             <p>Não perca tempo!</p>
             <p className="font-bold">

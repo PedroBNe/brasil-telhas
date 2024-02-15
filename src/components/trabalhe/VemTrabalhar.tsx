@@ -6,16 +6,18 @@ export default function VemTrabalhar() {
   return (
     <div>
       <div>
-        <div className="flex justify-between">
-          <div className="w-[60%]">
-            <h1 className="text-[45px]">Vem trabalhar com quem mais </h1>
+        <div className="flex justify-between flex-col md:flex-row gap-4 md:gap-0">
+          <div className="md:w-[60%]">
+            <h1 className="text-2xl md:text-[45px]">
+              Vem trabalhar com quem mais{" "}
+            </h1>
           </div>
-          <div className="w-[10%]">
-            <Image src={Logo} alt="Logo" width={75} height={50} />
+          <div className="hidden md:block w-[12%]">
+            <Image src={Logo} alt="Logo" width={135} height={91} />
           </div>
         </div>
         <div className="mb-6">
-          <h1 className="text-[45px]">cresce no sul do País</h1>
+          <h1 className="text-2xl md:text-[45px]">cresce no sul do País</h1>
         </div>
         <div className="mb-6">
           <h2>Faça parte da nossa equipe!</h2>
@@ -34,7 +36,7 @@ export default function VemTrabalhar() {
           </p>
         </div>
         <div>
-          <div className="w-[350px]">
+          <div className="md:w-[350px]">
             <Button link="/trabalhe#jobs" text="CONHECER VAGAS DISPONÍVEIS" />
           </div>
         </div>
