@@ -231,7 +231,7 @@ export default function Question() {
           )}
         </ul>
       </div>
-      <div className="absolute top-24 right-[-36%] hidden md:block">
+      <div className="w-[50%] absolute bottom-0 xl:top-24 right-[-36%] hidden md:block">
         <Image src={Logo} alt="Logo" width={540} />
       </div>
     </div>

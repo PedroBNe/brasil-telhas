@@ -80,7 +80,7 @@ export default function Testimony() {
               }
             >
               {item.testimony.map((testion) => (
-                <div key={testion.title} className="md:w-[28%] mt-[4%]">
+                <div key={testion.title} className="md:w-[28%] ml-[4%] mt-[4%]">
                   <p className="flex">
                     {Array.from({ length: testion.quality }).map((_, index) => (
                       <Image
@@ -99,7 +99,7 @@ export default function Testimony() {
                   <p className="text-justify font-medium">{testion.text}</p>
                 </div>
               ))}
-              <div className="flex justify-center md:justify-end h-full md:flex-row gap-[2%]">
+              <div className="flex justify-center md:justify-end h-full md:flex-row gap-[2%] mr-[4%]">
                 {item.images.map((image) => (
                   <Image
                     key={image.alt}

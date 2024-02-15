@@ -77,7 +77,7 @@ export default function Avaliacao() {
           <Image src={Left} alt="Esquerda" />
         </div>
       )}
-      <div className="w-[90%] md:w-[full] overflow-hidden">
+      <div className="w-[90%] md:w-[666px] xl:w-[1000px] overflow-hidden">
         <motion.div className="carousel-ava">
           <motion.div
             className="inner-ava"

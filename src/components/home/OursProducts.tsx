@@ -1,5 +1,4 @@
 import CardProducts from "../CardProducts";
-import Image from "next/image";
 
 import Telha from "@/assets/Products/telha-foto.png";
 import Cano from "@/assets/Products/cano.png";
@@ -14,7 +13,7 @@ export default function OursProducts() {
         </p>
         <h1 className="text-3xl md:text-5xl font-bold">Nossos produtos</h1>
       </div>
-      <div className="flex flex-col md:flex-row justify-between w-[80%] md:w-[90%] mx-auto mt-10 md:mt-20 relative gap-6 md:gap-0">
+      <div className="cardProduct-container flex flex-col md:flex-row justify-between w-[80%] md:w-[90%] mx-auto mt-10 md:mt-20 relative gap-6 md:gap-0">
         <CardProducts
           link="/1"
           classe="flex justify-center absolute top-[-10px] w-[110%] md:w-[130%]"

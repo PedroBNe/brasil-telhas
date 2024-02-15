@@ -14,7 +14,10 @@ export default function Social() {
         <h1 className="text-white">Redes Sociais</h1>
       </div>
       <div className="md:w-[20%] flex justify-around md:justify-between">
-        <Link href="https://www.facebook.com/BrasilTelhasMetalicas01">
+        <Link
+          className="flex"
+          href="https://www.facebook.com/BrasilTelhasMetalicas01"
+        >
           <Image
             width={50}
             height={50}
@@ -23,7 +26,7 @@ export default function Social() {
             className="transition transform hover:scale-125"
           />
         </Link>
-        <Link href="https://www.instagram.com/brasil.telhas/">
+        <Link className="flex" href="https://www.instagram.com/brasil.telhas/">
           <Image
             width={50}
             height={50}
@@ -32,7 +35,10 @@ export default function Social() {
             className="transition transform hover:scale-125"
           />
         </Link>
-        <Link href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LKoyzzMyMzEzYLRSNaiwNDUyMk6xSDRNNbEwskw2twIKWaSYJJuYJVqmJhskJadZeEkkFSUWZ-YolKTmZCQWK-SmlhxemJOZnFgMAH-AGOo&q=brasil+telhas+met%C3%A1licas&rlz=1C1FKPE_pt-PTBR1080BR1080&oq=bra&gs_lcrp=EgZjaHJvbWUqFQgBEC4YJxivARjHARiABBiKBRiOBTIGCAAQRRg8MhUIARAuGCcYrwEYxwEYgAQYigUYjgUyBggCEEUYOTITCAMQLhiDARjHARixAxjRAxiABDIGCAQQRRg9MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTczNWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#ip=1&lrd=0x95223d8a5e4829c7:0x98d4c46a9ec0bcf8,1,,,,">
+        <Link
+          className="flex"
+          href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LKoyzzMyMzEzYLRSNaiwNDUyMk6xSDRNNbEwskw2twIKWaSYJJuYJVqmJhskJadZeEkkFSUWZ-YolKTmZCQWK-SmlhxemJOZnFgMAH-AGOo&q=brasil+telhas+met%C3%A1licas&rlz=1C1FKPE_pt-PTBR1080BR1080&oq=bra&gs_lcrp=EgZjaHJvbWUqFQgBEC4YJxivARjHARiABBiKBRiOBTIGCAAQRRg8MhUIARAuGCcYrwEYxwEYgAQYigUYjgUyBggCEEUYOTITCAMQLhiDARjHARixAxjRAxiABDIGCAQQRRg9MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTczNWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#ip=1&lrd=0x95223d8a5e4829c7:0x98d4c46a9ec0bcf8,1,,,,"
+        >
           <Image
             width={50}
             height={50}
@@ -42,7 +48,7 @@ export default function Social() {
           />
         </Link>
       </div>
-      <div className="md:w-[30%] flex justify-between items-center gap-4 text-sm font-bold text-title">
+      <div className="lg:w-[30%] flex justify-between items-center gap-4 text-sm font-bold text-title">
         <Link
           className="min-w-[45%] md:min-w-[50%] bg-white rounded-md p-3 whitespace-nowrap flex justify-center"
           href="/sobre"

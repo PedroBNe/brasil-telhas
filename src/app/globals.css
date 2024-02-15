@@ -285,7 +285,7 @@ img {
   margin: 1.75rem auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .list-questions li {
     width: 100%;
   }
@@ -300,5 +300,15 @@ img {
   .item-ava {
     min-width: 250px;
     width: 250px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .cardProduct-container {
+    align-items: center;
+  }
+
+  .cardProduct {
+    width: 60%;
   }
 }

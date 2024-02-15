@@ -5,9 +5,9 @@ export default function Products() {
   const products = productsArray;
 
   return (
-    <div className="">
+    <div className="flex items-center flex-col">
       <h1 className="mb-12">Produtos</h1>
-      <div className="flex flex-wrap justify-between gap-8">
+      <div className="w-[60%] md:w-full flex flex-wrap justify-between gap-8">
         {products.map((product) => (
           <CardProducts
             key={product.id}

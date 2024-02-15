@@ -22,14 +22,14 @@ export default function Searching() {
           abaixo e inicie a conversa!
         </p>
       </div>
-      <div className="flex justify-between">
-        <div className="text-title w-[45%]">
+      <div className="flex justify-between flex-col md:flex-row gap-4 md:gap-0">
+        <div className="text-title md:w-[45%]">
           <p>Não perca tempo!</p>
           <p className="font-bold">
             Entre em contato agora mesmo com um de nossos representantes!
           </p>
         </div>
-        <div className="w-[42%] flex gap-8">
+        <div className="md:w-[42%] flex gap-8">
           <div className="w-[250px]">
             <Button link="/sobre" text="Conhecer mais agora!" />
           </div>
