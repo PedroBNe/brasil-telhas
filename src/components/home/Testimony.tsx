@@ -65,7 +65,7 @@ export default function Testimony() {
         <h1 className="mb-2">Depoimentos</h1>
         <p className="text-title">De quem comprovou nossa qualidade!</p>
       </div>
-      <div className="testimony h-[850px] md:h-[460px]">
+      <div className="testimony h-[460px]">
         <button className="prev-testimony" onClick={goToPrevSlide}>
           <Image src={LeftBtn} alt="Left" />
         </button>
@@ -99,13 +99,13 @@ export default function Testimony() {
                   <p className="text-justify font-medium">{testion.text}</p>
                 </div>
               ))}
-              <div className="flex flex-col h-full lg:flex-row gap-[2%]">
+              <div className="flex justify-center md:justify-end md:flex-col h-full lg:flex-row gap-[2%]">
                 {item.images.map((image) => (
                   <Image
                     key={image.alt}
                     src={image.src}
                     alt={image.alt}
-                    className="w-[60%] md:max-w-full"
+                    className="w-[40%] md:max-w-[50%]"
                   />
                 ))}
               </div>
