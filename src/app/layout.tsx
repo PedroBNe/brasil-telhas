@@ -35,7 +35,7 @@ export default function RootLayout({
           <Header />
           <Banner />
         </div>
-        <div className="px-[6%]">
+        <div className="px-[6%] max-w-[1700px] m-auto">
           {children}
           <Whatsap />
           <Footer />
