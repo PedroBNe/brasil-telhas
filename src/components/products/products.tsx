@@ -1,8 +1,23 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import CardProducts from "../CardProducts";
-import { productsArray } from "@/data/productsArray";
+
+import fetchProductData from "@/api/fetchData";
 
 export default function Products() {
-  const products = productsArray;
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const updateProducts = async () => {
+      const data = await fetchProductData();
+      setProducts(data);
+    };
+
+    updateProducts();
+  }, []);
+
+  console.log(products);
 
   return (
     <div className="flex items-center flex-col">
@@ -11,8 +26,8 @@ export default function Products() {
         {products.map((product) => (
           <CardProducts
             key={product.id}
-            img={product.img}
-            btn={product.btn}
+            img={product.imageUrl}
+            btn={product.TextoBotao}
             title={product.title}
             text={product.type}
             classe="flex justify-center absolute top-[-10px] w-[130%]"

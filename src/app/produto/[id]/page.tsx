@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "@/components/Button";
 import Image from "next/image";
 
@@ -6,6 +8,8 @@ import Conheca from "@/components/Conheca";
 import Success from "@/components/home/Success";
 import Social from "@/components/home/Social";
 import Testimony from "@/components/home/Testimony";
+import { useEffect, useState } from "react";
+import fetchProductData from "@/api/fetchData";
 
 interface PageDetailProps {
   params: {
@@ -14,7 +18,21 @@ interface PageDetailProps {
 }
 
 export default function ProductDetails({ params }: PageDetailProps) {
-  const product = productsArray.find((p) => p.id === params.id);
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const updateProducts = async () => {
+      const data = await fetchProductData();
+      setProducts(data);
+    };
+
+    updateProducts();
+  }, []);
+
+  const productId = parseInt(params.id, 10);
+  const product = products.find((p) => p.id === productId);
+
+  console.log(product);
 
   return (
     <div>
@@ -22,17 +40,17 @@ export default function ProductDetails({ params }: PageDetailProps) {
       <div className="mb-6 md:mb-0">
         <div className="flex justify-between mb-10 flex-col md:flex-row ">
           <div className="md:w-[55%] flex flex-col justify-between">
-            {product?.primaryImage ? (
+            {product?.primaryImage[0].image.url ? (
               <Image
-                src={product.primaryImage}
+                src={product.primaryImage[0].image.url}
                 alt="Primeira Imagem"
                 width={766}
                 height={367}
               />
             ) : null}
-            {product?.primaryImage2 ? (
+            {product?.primaryImage2[0].image.url ? (
               <Image
-                src={product.primaryImage2}
+                src={product.primaryImage2[0].image.url}
                 alt="Segunda Imagem"
                 width={739}
                 height={511}
@@ -52,7 +70,7 @@ export default function ProductDetails({ params }: PageDetailProps) {
             <h2 className="mb-4">Vantagens</h2>
             <ul className="mb-4">
               {product?.vantagens?.map((v, index) => (
-                <li key={index}>{v}</li>
+                <li key={index}>{v.children[0].text}</li>
               ))}
             </ul>
             <h2 className="mb-2">Aplicações</h2>
@@ -62,11 +80,17 @@ export default function ProductDetails({ params }: PageDetailProps) {
           </div>
         </div>
         <div className="flex justify-between flex-col md:flex-row gap-4 md:gap-0">
-          {product?.Images.map((image, index) => (
-            <Image key={index} src={image} alt="Imagem" />
+          {product?.images.map((image, index) => (
+            <Image
+              key={index}
+              src={image.image.url}
+              alt="Imagem"
+              width={388}
+              height={339}
+            />
           ))}
         </div>
-        <div className="flex justify-between mt-16 flex-col xl:flex-col gap-4 xl:gap-0">
+        <div className="flex justify-between mt-16 flex-col xl:flex-row gap-4 xl:gap-0">
           <div className="text-title">
             <p>Não perca tempo!</p>
             <p className="font-bold">

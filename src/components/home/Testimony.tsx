@@ -1,62 +1,35 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-import Video from "@/assets/Testimony/fotoT.png";
-import Foto from "@/assets/Testimony/fotoT2.png";
+import fetchDepo from "@/api/fetchDepo";
+
 import Star from "@/assets/Testimony/star.svg";
-
-import Maior from "@/assets/Carousel/maior.png";
-import Menor from "@/assets/Carousel/menor.png";
 
 import LeftBtn from "@/assets/button/menu-left.svg";
 import RightBtn from "@/assets/button/menu-right.svg";
 
 export default function Testimony() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const carouselItems = [
-    {
-      id: 1,
-      testimony: [
-        {
-          quality: 5,
-          title: "Pedro",
-          profession: "Dev",
-          text: "“Teste teste.”",
-        },
-      ],
-      images: [
-        { src: Video, alt: "Menor 2" },
-        { src: Foto, alt: "Maior 2" },
-      ],
-    },
-    {
-      id: 2,
-      testimony: [
-        {
-          quality: 3,
-          title: "Alan Paulo de Souza",
-          profession: "Gestor de Projetos - Ghost Company",
-          text: "“Uma obra realizada com os nossos produtos que oferece qualidade e garantia de durabilidade para o governo estadual. Além de fornecer segurança para o público, a estética entregue encanta.”",
-        },
-      ],
-      images: [
-        { src: Video, alt: "Menor 2" },
-        { src: Foto, alt: "Maior 2" },
-      ],
-    },
-  ];
+
+  const [depo, setDepo] = useState([]);
+
+  useEffect(() => {
+    const updateDepo = async () => {
+      const data = await fetchDepo();
+      setDepo(data);
+    };
+
+    updateDepo();
+  }, []);
 
   const goToPrevSlide = () => {
-    setActiveIndex(
-      (prevIndex) =>
-        (prevIndex - 1 + carouselItems.length) % carouselItems.length
-    );
+    setActiveIndex((prevIndex) => (prevIndex - 1 + depo.length) % depo.length);
   };
 
   const goToNextSlide = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % carouselItems.length);
+    setActiveIndex((prevIndex) => (prevIndex + 1) % depo.length);
   };
 
   return (
@@ -70,7 +43,7 @@ export default function Testimony() {
           <Image src={LeftBtn} alt="Left" />
         </button>
         <div className="carousel-slide">
-          {carouselItems.map((item, index) => (
+          {depo.map((item, index) => (
             <div
               key={item.id}
               className={
@@ -79,32 +52,32 @@ export default function Testimony() {
                   : "slide-testion slide h-full flex-col md:flex-row mt-20 md:mt-0"
               }
             >
-              {item.testimony.map((testion) => (
-                <div key={testion.title} className="md:w-[28%] ml-[4%] mt-[4%]">
-                  <p className="flex">
-                    {Array.from({ length: testion.quality }).map((_, index) => (
-                      <Image
-                        key={index}
-                        src={Star}
-                        alt="Star"
-                        width={20}
-                        height={20}
-                      />
-                    ))}
-                  </p>
-                  <h2 className="text-text">{testion.title}</h2>
-                  <p className="text-text italic font-medium mb-4">
-                    {testion.profession}
-                  </p>
-                  <p className="text-justify font-medium">{testion.text}</p>
-                </div>
-              ))}
+              <div key={item.title} className="md:w-[28%] ml-[4%] mt-[4%]">
+                <p className="flex">
+                  {Array.from({ length: item.quality }).map((_, index) => (
+                    <Image
+                      key={index}
+                      src={Star}
+                      alt="Star"
+                      width={20}
+                      height={20}
+                    />
+                  ))}
+                </p>
+                <h2 className="text-text">{item.title}</h2>
+                <p className="text-text italic font-medium mb-4">
+                  {item.profession}
+                </p>
+                <p className="text-justify font-medium">{item.text}</p>
+              </div>
               <div className="flex justify-center md:justify-end h-full md:flex-row gap-[2%] mr-[4%]">
-                {item.images.map((image) => (
+                {item.images.map((imagem) => (
                   <Image
-                    key={image.alt}
-                    src={image.src}
-                    alt={image.alt}
+                    key={imagem.image.url}
+                    src={imagem.image.url}
+                    alt={imagem.image.url}
+                    width={imagem.image.width}
+                    height={imagem.image.height}
                     className="w-[40%] md:max-w-[50%]"
                   />
                 ))}
