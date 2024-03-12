@@ -1,6 +1,6 @@
 async function fetchProductData() {
   const response = await fetch(
-    "http://localhost:1337/api/Produtos/1/?populate[produtos][populate]=*"
+    `${process.env.REACT_APP_API_URL}/api/Produtos/1/?populate[produtos][populate]=*`
   );
   const { data } = await response.json();
   const { attributes } = data;

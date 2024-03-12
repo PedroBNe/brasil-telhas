@@ -1,6 +1,6 @@
 async function fetchDepo() {
   const response = await fetch(
-    "http://localhost:1337/api/depoimentos/1/?populate[depoimentos][populate]=*"
+    `${process.env.REACT_APP_API_URL}/api/depoimentos/1/?populate[depoimentos][populate]=*`
   );
   const { data } = await response.json();
   const { attributes } = data;
