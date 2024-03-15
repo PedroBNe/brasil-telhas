@@ -100,7 +100,7 @@ export default function Welcome() {
           <Image src={Logo} alt="Logo" className="w-full h-auto" />
         </div>
         <div className="pt-10 md:pt-16 flex justify-around md:justify-normal md:gap-4">
-          <div className="w-[100%]">
+          <div className="w-[200px] md:w-[300px] lg:w-[475px]">
             <Button
               link="https://api.whatsapp.com/send?phone=5548999040036"
               text="Falar com consultor"
