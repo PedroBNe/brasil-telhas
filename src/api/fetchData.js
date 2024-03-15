@@ -1,6 +1,6 @@
 async function fetchProductData() {
   const response = await fetch(
-    `${process.env.REACT_APP_API_URL}/api/Produtos/1/?populate[produtos][populate]=*`
+    "https://brasiltelhasmetalicas.com.br/api/Produtos/1/?populate[produtos][populate]=*"
   );
   const { data } = await response.json();
   const { attributes } = data;

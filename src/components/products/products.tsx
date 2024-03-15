@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 "use client";
 
 import { useEffect, useState } from "react";
@@ -16,8 +18,6 @@ export default function Products() {
 
     updateProducts();
   }, []);
-
-  console.log(products);
 
   return (
     <div className="flex items-center flex-col">

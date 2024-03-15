@@ -1,6 +1,6 @@
 async function fetchCase() {
   const response = await fetch(
-    `${process.env.REACT_APP_API_URL}/api/cases/1?populate[Cases][populate]=*"`
+    "https://brasiltelhasmetalicas.com.br/api/cases/2?populate[Cases][populate]=*"
   );
   const { data } = await response.json();
   const { attributes } = data;

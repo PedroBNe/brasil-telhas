@@ -1,6 +1,6 @@
 async function fetchAva() {
   const response = await fetch(
-    `${process.env.REACT_APP_API_URL}/avaliacaos/1/?populate[avaliacao][populate]=*`
+    "https://brasiltelhasmetalicas.com.br/api/avaliacaos/2/?populate[avaliacao][populate]=*"
   );
   const { data } = await response.json();
   const { attributes } = data;

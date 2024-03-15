@@ -1,9 +1,10 @@
+// @ts-nocheck
+
 "use client";
 
 import Button from "@/components/Button";
 import Image from "next/image";
 
-import { productsArray } from "@/data/productsArray";
 import Conheca from "@/components/Conheca";
 import Success from "@/components/home/Success";
 import Social from "@/components/home/Social";

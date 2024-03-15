@@ -1,6 +1,6 @@
 async function fetchDepo() {
   const response = await fetch(
-    `${process.env.REACT_APP_API_URL}/api/depoimentos/1/?populate[depoimentos][populate]=*`
+    "https://brasiltelhasmetalicas.com.br/api/depoimentos/2/?populate[depoimentos][populate]=*"
   );
   const { data } = await response.json();
   const { attributes } = data;

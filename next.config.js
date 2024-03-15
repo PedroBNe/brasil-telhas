@@ -1,7 +1,10 @@
+require('dotenv').config();
+
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   images: {
-    domains: ["res.cloudinary.com"],
+    domains: ["brasiltelhasmetalicas.com.br"],
   },
 };
 
