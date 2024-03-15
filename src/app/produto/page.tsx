@@ -9,9 +9,9 @@ export default function Produto() {
     <div className="flex flex-col gap-20">
       <Conheca />
       <ProductDetails />
-      <Success />
+      {/* <Success /> */}
       <Social />
-      <Testimony />
+      {/* <Testimony /> */}
     </div>
   );
 }

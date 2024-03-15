@@ -111,9 +111,9 @@ export default function ProductDetails({ params }: PageDetailProps) {
           </div>
         </div>
       </div>
-      <Success />
+      {/* <Success /> */}
       <Social />
-      <Testimony />
+      {/* <Testimony /> */}
     </div>
   );
 }

@@ -17,9 +17,9 @@ export default function Home() {
       <Welcome />
       <OursProducts />
       <Benefits />
-      <Success />
+      {/* <Success /> */}
       <Social />
-      <Testimony />
+      {/* <Testimony /> */}
       <AreWe />
       <Question />
       <Avaliacao />
