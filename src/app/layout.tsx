@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Whatsap from "@/components/Whatsap";
 import CookiesPopUp from "@/components/Cookies";
 import PopUp from "@/components/PopUp";
+import Head from "next/head";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -29,6 +30,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt">
+      <Head>
+        <link rel="icon" href="/favicon.png" />
+      </Head>
       <body className={montserrat.className}>
         <div className="relative bg-img_maquina_telhas w-full h-full bg-cover bg-center">
           <div className="absolute inset-0 bg-img_maquina_telhas bg-cover bg-center brightness-25"></div>
