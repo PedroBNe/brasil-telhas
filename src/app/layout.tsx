@@ -30,9 +30,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt">
-      <Head>
+      <head>
         <link rel="icon" href="/favicon.png" />
-      </Head>
+      </head>
       <body className={montserrat.className}>
         <div className="relative bg-img_maquina_telhas w-full h-full bg-cover bg-center">
           <div className="absolute inset-0 bg-img_maquina_telhas bg-cover bg-center brightness-25"></div>
