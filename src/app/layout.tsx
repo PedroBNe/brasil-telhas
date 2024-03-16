@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="@/assets/favicon.png" />
       </Head>
       <body className={montserrat.className}>
         <div className="relative bg-img_maquina_telhas w-full h-full bg-cover bg-center">
