@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import Logo from "@/assets/Benefits/Logo.png";
-import Banner from "@/assets/Benefits/Banner.png";
+import Banner from "@/assets/Benefits/img-home.jpg";
 import Button from "../Button";
 
 export default function Benefits() {
