@@ -1,6 +1,6 @@
 export default function Conheca() {
   return (
-    <div className="mt-8">
+    <div className="mt-20">
       <h1 className="mb-2">Conheça nosso catálogo</h1>
       <h2 className="mb-6">
         Ou entre em contato e tenha um atendimento personalizado

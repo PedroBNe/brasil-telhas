@@ -2,7 +2,7 @@ import Button from "../Button";
 
 export default function Searching() {
   return (
-    <div className="mt-6">
+    <div className="mt-20">
       <div className="mb-3">
         <h1>Procurando preço e qualidade?</h1>
         <h2>Está no lugar certo!</h2>
