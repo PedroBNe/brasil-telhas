@@ -1,7 +1,7 @@
 import CardProducts from "../CardProducts";
 
 import Telha from "@/assets/Products/telha-foto.png";
-import Cano from "@/assets/Products/cano.png";
+import Cano from "@/assets/Products/perfil.png";
 import Parafuso from "@/assets/Products/parafuso.png";
 
 export default function OursProducts() {
@@ -15,15 +15,20 @@ export default function OursProducts() {
       </div>
       <div className="cardProduct-container flex flex-col md:flex-row justify-between w-[80%] md:w-[90%] mx-auto mt-10 md:mt-20 relative gap-6 md:gap-0">
         <CardProducts
-          link="/1"
+          link="/produtos"
           classe="flex justify-center absolute top-[-10px] w-[110%] md:w-[130%]"
           img={Telha}
-          text="Explore nossa variedade de telhas metálicas duráveis, ideais para uma ampla gama de aplicações. Desde coberturas residenciais até projetos industriais"
+          text="A BRASIL TELHAS EPS são compostas por uma 
+          Telha Trapezoidal ou Ondulada, com uma 
+          camada de EPS (isopor) colada em sua face 
+          inferior. Podendo ser na cor natural da chapa 
+          (aluzinco) ou com pintura PRÉ ou PÓS 
+          PINTADA."
           title="Telhas Metálicas"
           btn="NAVEGAR NO CATÁLOGO"
         />
         <CardProducts
-          link="/2"
+          link="https://api.whatsapp.com/send?phone=5548999040036"
           classe="flex justify-center absolute top-[-20px]"
           img={Cano}
           text="Conheça nossa linha de perfis de alta qualidade, projetados para atender às demandas específicas de cada projeto. Oferecemos soluções personalizadas para garantir uma integração perfeita em qualquer estrutura."
@@ -31,10 +36,13 @@ export default function OursProducts() {
           btn="CONHECER MODELOS"
         />
         <CardProducts
-          link="/3"
+          link="https://api.whatsapp.com/send?phone=5548999040036"
           classe="flex justify-center absolute top-[-20px]"
           img={Parafuso}
-          text="Descubra a importância dos detalhes com nossa seleção de parafusos desenvolvidos para resistir às condições mais adversas. São a escolha confiável para fixação segura em qualquer aplicação."
+          text="Produtos feitos em aço de baixo carbono C1022 
+          com Revestimento RUSPERT, superior ao galvanizado. As arruelas de vedação são de EPDM, 
+          um material resistente aos raios ultra violeta e a 
+          altas temperaturas"
           title="Parafusos"
           btn="CONSULTAR MODELOS"
         />

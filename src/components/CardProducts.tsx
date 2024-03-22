@@ -24,7 +24,7 @@ const CardProducts: React.FC<CardProductsProps> = ({
   link,
 }) => {
   return (
-    <div className="cardProduct w-full md:w-[32%] lg:w-[25%] bg-product hover:bg-product-select flex flex-col items-center p-6 relative shadow-2xl transition transform hover:scale-110">
+    <div className="cardProduct w-full md:w-[32%] lg:w-[25%] bg-product hover:bg-product-select flex flex-col justify-between items-center p-6 relative shadow-2xl transition transform hover:scale-110">
       <div className={classe}>
         <motion.div
           whileHover={{ scale: 1.1 }}
@@ -46,8 +46,8 @@ const CardProducts: React.FC<CardProductsProps> = ({
       </div>
       <div className="pt-8 shadow-2xl transition transform hover:scale-110">
         <Link
-          className="bg-white font-bold text-[10px] xl:text-sm text-product rounded px-1 py-2 shadow-lg"
-          href={`/produto/${link}`}
+          className="bg-white font-bold text-[10px] xl:text-sm text-product rounded px-6 py-2 shadow-lg"
+          href={`${link}`}
         >
           {btn}
         </Link>

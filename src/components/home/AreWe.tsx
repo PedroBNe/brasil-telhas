@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 import Are from "@/assets/AreWe/are.png";
-import Button from "../Button";
 import Link from "next/link";
 
 export default function AreWe() {
@@ -15,7 +14,7 @@ export default function AreWe() {
         <p className="text-title pb-4 text-justify">Somos a MAIOR DO SUL!!</p>
         <p className="font-medium pb-4 text-justify">
           Ao contrário do que se imagina ao ver nossa qualidade e estrutura,
-          nossa história não é de longa data. Iniciamos em favereiro de 2022 com
+          nossa história não é de longa data. Iniciamos em fevereiro de 2022 com
           um objetivo único de produzir e entregar credibilidade com nossas
           telhas metálicas.{" "}
         </p>

@@ -31,7 +31,7 @@ export default function Products() {
             title={product.title}
             text={product.type}
             classe="flex justify-center absolute top-[-10px] w-[130%]"
-            link={product.id}
+            link={`/produto/${product.id}`}
           />
         ))}
       </div>

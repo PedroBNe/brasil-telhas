@@ -17,8 +17,14 @@ export default function Benefits() {
             Descubra o que você ganha ao utilizar nossos produtos em sua obra
           </p>
         </div>
-        <div>
-          <Image src={Banner} alt="Banner" width={340} height={450} />
+        <div className="min-w-[340px] min-h-[450px]">
+          <Image
+            src={Banner}
+            alt="Banner"
+            width={340}
+            height={450}
+            className="object-cover"
+          />
         </div>
       </div>
       <div className="md:w-[28%] flex justify-between flex-col mt-[2%] text-justify gap-6 md:gap-0">

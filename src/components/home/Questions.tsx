@@ -93,13 +93,15 @@ export default function Question() {
             >
               <li className="pl-6">
                 <p>
-                  A escolha do perfil de telha metálica depende de vários
-                  fatores, como o tipo de construção, o clima da região, o
-                  design estético desejado e requisitos específicos.
-                  Recomendamos uma consulta com nossos especialistas para
-                  avaliar suas necessidades e oferecer orientações
-                  personalizadas para garantir a escolha mais adequada ao seu
-                  projeto.
+                  Agradecemos pelo seu interesse em nossas telhas metálicas. No
+                  momento, nossa empresa não oferece garantia para esse produto.
+                  Reconhecemos a importância da garantia para a tranquilidade do
+                  cliente, e estamos constantemente revisando nossas políticas
+                  para melhor atender às necessidades de nossos clientes. No
+                  entanto, estamos comprometidos em fornecer produtos de alta
+                  qualidade e garantir sua satisfação. Se você tiver alguma
+                  dúvida adicional ou precisar de assistência, não hesite em
+                  entrar em contato conosco. Estamos aqui para ajudar.
                 </p>
               </li>
             </motion.div>
@@ -136,13 +138,14 @@ export default function Question() {
             >
               <li className="pl-6">
                 <p>
-                  A escolha do perfil de telha metálica depende de vários
-                  fatores, como o tipo de construção, o clima da região, o
-                  design estético desejado e requisitos específicos.
-                  Recomendamos uma consulta com nossos especialistas para
-                  avaliar suas necessidades e oferecer orientações
-                  personalizadas para garantir a escolha mais adequada ao seu
-                  projeto.
+                  Estamos constantemente monitorando nossa capacidade de
+                  produção e logística para garantir que possamos atender às
+                  demandas de nossos clientes da melhor maneira possível. Assim
+                  que você realizar a compra, nossa equipe estará em contato
+                  para fornecer uma estimativa mais precisa do prazo de entrega.
+                  Agradecemos sua compreensão e estamos à disposição para
+                  fornecer qualquer assistência adicional que
+                  você possa precisar.
                 </p>
               </li>
             </motion.div>
@@ -177,13 +180,12 @@ export default function Question() {
             >
               <li className="pl-6">
                 <p>
-                  A escolha do perfil de telha metálica depende de vários
-                  fatores, como o tipo de construção, o clima da região, o
-                  design estético desejado e requisitos específicos.
-                  Recomendamos uma consulta com nossos especialistas para
-                  avaliar suas necessidades e oferecer orientações
-                  personalizadas para garantir a escolha mais adequada ao seu
-                  projeto.
+                  Temos uma variedade de tamanhos e cores disponíveis em nossa
+                  linha de telhas metálicas. Para atender às diferentes
+                  necessidades dos nossos clientes, oferecemos uma gama
+                  diversificada de opções. Desde tamanhos padrão até medidas
+                  personalizadas, estamos prontos para atender às
+                  suas especificações.
                 </p>
               </li>
             </motion.div>
@@ -207,7 +209,9 @@ export default function Question() {
                   : ""
               }
             />
-            <p className="font-bold">Quais tamanhos vocês produzem?</p>
+            <p className="font-bold">
+              Qual é a vida útil média das telhas metálicas?
+            </p>
           </div>
           {activeList === 5 && (
             <motion.div
@@ -218,13 +222,13 @@ export default function Question() {
             >
               <li className="pl-6">
                 <p>
-                  A escolha do perfil de telha metálica depende de vários
-                  fatores, como o tipo de construção, o clima da região, o
-                  design estético desejado e requisitos específicos.
-                  Recomendamos uma consulta com nossos especialistas para
-                  avaliar suas necessidades e oferecer orientações
-                  personalizadas para garantir a escolha mais adequada ao seu
-                  projeto.
+                  Nossas telhas metálicas são projetadas para oferecer uma vida
+                  útil duradoura. Embora a vida útil exata possa variar
+                  dependendo de vários fatores, como condições climáticas,
+                  manutenção adequada e uso, geralmente as telhas metálicas têm
+                  uma vida útil média de X anos. Recomendamos seguir as
+                  instruções de instalação e manutenção fornecidas para garantir
+                  a longevidade e o desempenho ideal das telhas metálicas.
                 </p>
               </li>
             </motion.div>

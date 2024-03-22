@@ -47,7 +47,7 @@ export default function Banner() {
               text="ENTRAR EM CONTATO AGORA"
             />
           </div>
-          <Link href="/produtos">
+          <Link href="/produtos" className="flex items-center">
             <div className="flex">
               <p className="font-semibold">Navegar no catálogo de produtos</p>
               <Image

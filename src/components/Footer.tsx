@@ -36,8 +36,8 @@ export default function Footer() {
               <Image src={Local} alt="Localização" width={40} height={40} />
             </div>
             <div className="text-text font-medium text-sm">
-              <p>R. Antônio Simão, 543 - São José, </p>
-              <p>Sombrio - SC, 88960-000</p>
+              <p>Rod. Governador Mário Covas - Nova Brasília, </p>
+              <p>Sombrio - SC, 88960-000</p>
             </div>
           </div>
           <div className="flex mb-[50px]">
@@ -45,8 +45,7 @@ export default function Footer() {
               <Image src={Email} alt="Email" width={40} height={40} />
             </div>
             <div className="text-text font-medium text-sm">
-              <p>contato@brasiltelhasmetalicas.com.br</p>
-              <p>comercial@brasiltelhasmetalicas.com.br</p>
+              <p>brasiltelhasmetalicas@gmail.com</p>
             </div>
           </div>
           <div className="flex mb-[50px]">
