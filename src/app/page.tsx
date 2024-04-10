@@ -1,5 +1,3 @@
-"use client";
-
 import AreWe from "@/components/home/AreWe";
 import Avaliacao from "@/components/home/Avaliacao";
 import Benefits from "@/components/home/Benefits";
@@ -9,7 +7,6 @@ import Social from "@/components/home/Social";
 import Success from "@/components/home/Success";
 import Testimony from "@/components/home/Testimony";
 import Welcome from "@/components/home/Welcome";
-import { useEffect } from "react";
 
 export default function Home() {
   return (

@@ -1,30 +1,56 @@
-// @ts-nocheck
-
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-import fetchAva from "@/api/fetchAva";
+import Profile from "@/assets/Avaliacao/profile.svg";
 
 import Left from "@/assets/Avaliacao/menu-left.svg";
 import Right from "@/assets/Avaliacao/menu-right.svg";
 
+const profiles = [
+  {
+    user: "Ghost Company",
+    category: "Agência de Publicidade",
+    image: Profile,
+    text: "Uma empresa séria e dedicada em fornecer qualidade para os seus clientes. Parabéns a toda equipe!",
+  },
+  {
+    user: "User2",
+    category: "Agência de Publicidade",
+    image: Profile,
+    text: "Uma empresa séria e dedicada em fornecer qualidade para os seus clientes. Parabéns a toda equipe!",
+  },
+  {
+    user: "User3",
+    category: "Agência de Publicidade",
+    image: Profile,
+    text: "Uma empresa séria e dedicada em fornecer qualidade para os seus clientes. Parabéns a toda equipe!",
+  },
+  {
+    user: "User4",
+    category: "Agência de Publicidade",
+    image: Profile,
+    text: "Uma empresa séria e dedicada em fornecer qualidade para os seus clientes. Parabéns a toda equipe!",
+  },
+  {
+    user: "User5",
+    category: "Agência de Publicidade",
+    image: Profile,
+    text: "Uma empresa séria e dedicada em fornecer qualidade para os seus clientes. Parabéns a toda equipe!",
+  },
+  {
+    user: "Pedro",
+    category: "Agência",
+    image: Profile,
+    text: "Uma empresa séria e dedicada em fornecer qualidade para os seus clientes. Parabéns a toda equipe!",
+  },
+];
+
 const ITEMS_VISIBLE = 3;
 
 export default function Avaliacao() {
-  const [profiles, setProfiles] = useState([]);
-
-  useEffect(() => {
-    const updateProducts = async () => {
-      const data = await fetchAva();
-      setProfiles(data);
-    };
-
-    updateProducts();
-  }, []);
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const maxIndex = profiles.length - ITEMS_VISIBLE;
@@ -64,7 +90,7 @@ export default function Avaliacao() {
             {profiles.map((profile) => (
               <motion.div key={profile.user} className="item-ava">
                 <Image
-                  src={profile.image[0].image.url}
+                  src={profile.image}
                   alt="Foto de perfil"
                   width={60}
                   height={60}

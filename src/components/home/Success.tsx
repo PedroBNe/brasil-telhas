@@ -1,11 +1,7 @@
-// @ts-nocheck
-
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-
-import fetchCase from "@/api/fetchCase";
 
 import Maior from "@/assets/Carousel/maior.png";
 import Menor from "@/assets/Carousel/menor.png";
@@ -14,27 +10,40 @@ import LeftBtn from "@/assets/button/menu-left.svg";
 import RightBtn from "@/assets/button/menu-right.svg";
 
 export default function Success() {
-  const [profiles, setProfiles] = useState([]);
-
-  useEffect(() => {
-    const updateProducts = async () => {
-      const data = await fetchCase();
-      setProfiles(data);
-    };
-
-    updateProducts();
-  }, []);
-
   const [activeIndex, setActiveIndex] = useState(0);
+
+  const carouselItems = [
+    {
+      id: 1,
+      images: [
+        { src: Menor, alt: "Menor 1" },
+        { src: Maior, alt: "Maior 1" },
+      ],
+      title: "Instalação em Ginásio Estadual em São João do Sul - SC",
+      text: `Uma obra realizada com os nossos produtos que oferece qualidade e garantia de durabilidade para o governo estadual. Além de fornecer segurança para o público, a estética entregue encanta.
+      `,
+    },
+    {
+      id: 2,
+      images: [
+        { src: Maior, alt: "Menor 2" },
+        { src: Menor, alt: "Maior 2" },
+      ],
+      title: "Instalação em Ginásio Estadual em São João do Sul - SC",
+      text: `Uma obra realizada com os nossos produtos que oferece qualidade e garantia de durabilidade para o governo estadual. Além de fornecer segurança para o público, a estética entregue encanta.
+      `,
+    },
+  ];
 
   const goToPrevSlide = () => {
     setActiveIndex(
-      (prevIndex) => (prevIndex - 1 + profiles.length) % profiles.length
+      (prevIndex) =>
+        (prevIndex - 1 + carouselItems.length) % carouselItems.length
     );
   };
 
   const goToNextSlide = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % profiles.length);
+    setActiveIndex((prevIndex) => (prevIndex + 1) % carouselItems.length);
   };
 
   return (
@@ -45,7 +54,7 @@ export default function Success() {
       </div>
       <div className="carousel h-[80vh] sm:h-[680px] md:h-[320px] lg:h-[400px] xl:h-[450px]">
         <div className="carousel-slide">
-          {profiles.map((item, index) => (
+          {carouselItems.map((item, index) => (
             <div
               key={item.id}
               className={
@@ -62,11 +71,9 @@ export default function Success() {
                   {item.images.map((image) => (
                     <Image
                       className="max-h-96 md:max-h-none"
-                      key={image.image.url}
-                      src={image.image.url}
-                      alt={image.image.url}
-                      width={image.image.width}
-                      height={image.image.height}
+                      key={image.alt}
+                      src={image.src}
+                      alt={image.alt}
                     />
                   ))}
                 </div>

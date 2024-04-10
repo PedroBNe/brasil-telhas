@@ -1,11 +1,7 @@
-require('dotenv').config();
+require("dotenv").config();
 
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {
-  images: {
-    domains: ["brasiltelhasmetalicas.com.br"],
-  },
-};
+const nextConfig = {};
 
 module.exports = nextConfig;
