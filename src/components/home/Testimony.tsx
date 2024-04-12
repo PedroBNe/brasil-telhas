@@ -109,7 +109,8 @@ export default function Testimony() {
                       key={image.alt}
                       src={image.src}
                       alt={image.alt}
-                      className="w-[40%] md:max-w-[50%]"
+                      width={20}
+                      height={20}
                     />
                   ))}
                 </div>

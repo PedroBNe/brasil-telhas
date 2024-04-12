@@ -55,15 +55,19 @@ export default function ProductDetails({ params }: PageDetailProps) {
                 <li key={index}>{v}</li>
               ))}
             </ul>
-            <h2 className="mb-2">Aplicações</h2>
+            <h2 className="mb-2">Sobre o produto</h2>
             <p className="mb-4">{product?.aplicacao}</p>
-            <h2 className="mb-2">Ficha Técnica</h2>
-            <p>{product?.ficha}</p>
           </div>
         </div>
         <div className="flex justify-between flex-col md:flex-row gap-4 md:gap-0">
           {product?.Images.map((image, index) => (
-            <Image key={index} src={image} alt="Imagem" />
+            <Image
+              key={index}
+              src={image}
+              alt="Imagem"
+              width={388}
+              height={339}
+            />
           ))}
         </div>
         <div className="flex justify-between mt-16 flex-col xl:flex-row gap-4 xl:gap-0">
