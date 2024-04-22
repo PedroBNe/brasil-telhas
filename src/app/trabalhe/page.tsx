@@ -8,7 +8,7 @@ export default function Trabalhe() {
     <div className="mt-8">
       <VemTrabalhar />
       <BenefitsWork />
-      <Jobs />
+      {/* <Jobs /> */}
       <TalentsForm />
     </div>
   );

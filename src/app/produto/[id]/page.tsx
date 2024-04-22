@@ -19,7 +19,7 @@ export default function ProductDetails({ params }: PageDetailProps) {
   return (
     <div>
       <Conheca />
-      <div className="mb-6 md:mb-0">
+      <div className="mb-8">
         <div className="flex justify-between mb-10 flex-col md:flex-row ">
           <div className="md:w-[55%] flex flex-col justify-between">
             {product?.primaryImage ? (
@@ -52,7 +52,9 @@ export default function ProductDetails({ params }: PageDetailProps) {
             <h2 className="mb-4">Vantagens</h2>
             <ul className="mb-4">
               {product?.vantagens?.map((v, index) => (
-                <li key={index}>{v}</li>
+                <li key={index}>
+                  <p>{v}</p>
+                </li>
               ))}
             </ul>
             <h2 className="mb-2">Sobre o produto</h2>

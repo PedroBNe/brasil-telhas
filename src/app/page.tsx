@@ -19,7 +19,7 @@ export default function Home() {
       {/* <Testimony /> */}
       <AreWe />
       <Question />
-      <Avaliacao />
+      {/* <Avaliacao /> */}
     </div>
   );
 }
